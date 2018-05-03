@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import AudioKit
 
-class AudioManager: NSObject {
-
+class AudioManager: NSObject
+{
+     let metronome = AKMetronome()
+    
 }

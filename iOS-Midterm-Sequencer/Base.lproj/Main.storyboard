@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,766 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Midterm_Sequencer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OqE-hs-dwP">
+                                <rect key="frame" x="10" y="156" width="355" height="355"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NCa-A9-kiT">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oac-S5-7Px" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="G2L-2e-9D5"/>
+                                                    <constraint firstAttribute="width" constant="40" id="jgw-hu-Nfk"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhb-rI-dLq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-aZ-Xsm" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="w2x-rG-qsa"/>
+                                                    <constraint firstAttribute="width" constant="40" id="xfk-SC-34v"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrP-MD-qJD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBY-fg-bwV" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Cj0-EU-TSq"/>
+                                                    <constraint firstAttribute="height" constant="40" id="gju-w7-T15"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tjt-fY-t0k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amn-g4-Yak" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7m7-DG-f57"/>
+                                                    <constraint firstAttribute="width" constant="40" id="tVB-S0-Fmd"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="krt-3O-uWM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-Nz-sY7" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6e9-g8-rtx"/>
+                                                    <constraint firstAttribute="width" constant="40" id="b3D-zF-1SZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foM-sU-Inm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-Qw-kHd" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HZN-rz-G7r"/>
+                                                    <constraint firstAttribute="width" constant="40" id="m6w-8R-QlK"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvM-g6-M2w"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-tS-4TW" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="G89-8J-z24"/>
+                                                    <constraint firstAttribute="width" constant="40" id="iBa-74-fSM"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feU-H7-mMG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3V-xQ-gdM" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="DME-GN-UM1"/>
+                                                    <constraint firstAttribute="width" constant="40" id="W75-z5-TVc"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SG8-F6-ric"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Mjr-Gd-s8J">
+                                        <rect key="frame" x="0.0" y="45" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2y-KW-d6g" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="AV7-xv-lpu"/>
+                                                    <constraint firstAttribute="width" constant="40" id="D4L-gC-4WA"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="to3-sh-gtk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVA-Ok-oWw" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="IVI-Pd-Ao9"/>
+                                                    <constraint firstAttribute="width" constant="40" id="MHp-ZH-x2O"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a3l-7u-BNf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMJ-vs-qET" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="2Pz-aR-OH2"/>
+                                                    <constraint firstAttribute="width" constant="40" id="g8r-ba-MmU"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i23-sQ-A8H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vq-6m-tbr" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="4zH-Mm-O8M"/>
+                                                    <constraint firstAttribute="height" constant="40" id="bqC-Hc-bFZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Qq-GS-1KI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEI-Rg-9Cd" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="gtk-5b-5fa"/>
+                                                    <constraint firstAttribute="width" constant="40" id="hwn-pf-Sse"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9N-na-QGH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlH-Ng-aiI" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Oqb-ds-Od5"/>
+                                                    <constraint firstAttribute="width" constant="40" id="o0W-6P-tMj"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I86-Ys-kX9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-z9-laV" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="eE3-3h-gBf"/>
+                                                    <constraint firstAttribute="height" constant="40" id="miy-lq-5kk"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrQ-I5-bD4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAb-fb-ixl" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="7NZ-mC-gHT"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ctz-9M-vxc"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbC-TM-Opw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-rh-ZZa">
+                                        <rect key="frame" x="0.0" y="90" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpK-UX-w3I" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="8Yu-4f-bwA"/>
+                                                    <constraint firstAttribute="height" constant="40" id="HZE-AO-fnf"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nvf-zd-Smb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWs-Qs-E1K" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5UE-vE-jny"/>
+                                                    <constraint firstAttribute="width" constant="40" id="neh-m0-p8k"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VtW-Ir-mvf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4t-xx-hNU" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="H2g-We-ZLT"/>
+                                                    <constraint firstAttribute="width" constant="40" id="vkM-lf-Atp"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8t-nX-Rov"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSR-jQ-3e9" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="PZe-Mx-b2N"/>
+                                                    <constraint firstAttribute="width" constant="40" id="gYb-9A-dMA"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7w-5G-d3H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kZ-6M-Yiu" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="61n-Tp-Jnb"/>
+                                                    <constraint firstAttribute="width" constant="40" id="jVP-sx-FWA"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNm-yh-H1C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNI-yS-kip" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="ZTO-jl-viX"/>
+                                                    <constraint firstAttribute="height" constant="40" id="c8Z-2G-L56"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pUV-cE-jOJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrH-g6-1QR" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ofg-xP-KEg"/>
+                                                    <constraint firstAttribute="width" constant="40" id="hsE-sD-Ef6"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6l-Nl-wms"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89l-Sf-gPl" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="FHg-JV-Lfm"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Zzg-rx-XGX"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASV-aE-pAZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oLl-44-IyH">
+                                        <rect key="frame" x="0.0" y="135" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptf-7V-npg" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="PVP-eB-BSB"/>
+                                                    <constraint firstAttribute="height" constant="40" id="zWp-8x-Ca5"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDs-CP-vEH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-n8-laG" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="8Wu-jF-hx2"/>
+                                                    <constraint firstAttribute="height" constant="40" id="XwB-4u-nPi"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUQ-Nz-QvW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9Y-yd-Vp0" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3vf-IW-4aB"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Sbd-pD-zPh"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FcB-JL-A56"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-ez-3w0" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="MPf-qJ-uIK"/>
+                                                    <constraint firstAttribute="height" constant="40" id="heF-Aw-ZGp"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aba-Vu-4ra"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Z-yJ-Pvt" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="1I5-Ya-ypo"/>
+                                                    <constraint firstAttribute="width" constant="40" id="xjx-AL-SXo"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1d-TR-MI8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTl-0U-bxG" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="83C-dE-rmo"/>
+                                                    <constraint firstAttribute="width" constant="40" id="ajV-tw-vKK"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6vu-lF-PgX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAv-VO-MML" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="VOK-7x-faX"/>
+                                                    <constraint firstAttribute="height" constant="40" id="hIw-LL-zAN"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JML-hw-tYc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0v-HG-Zb5" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="aKf-AD-llF"/>
+                                                    <constraint firstAttribute="height" constant="40" id="pum-KW-c26"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZc-Tx-G1T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DWb-n1-mOw">
+                                        <rect key="frame" x="0.0" y="180" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-PU-Xt7" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="8gn-UJ-yvx"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Wog-Ll-tE7"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7u-vf-FrR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8m-cj-KN5" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="lOG-DZ-fVi"/>
+                                                    <constraint firstAttribute="width" constant="40" id="ynh-4T-JtZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvZ-nF-IAi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvp-zV-K2O" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7OM-jh-ZYW"/>
+                                                    <constraint firstAttribute="width" constant="40" id="RQ0-em-BEF"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="na4-0z-Mrj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjD-q2-fBp" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="TcU-4d-nIf"/>
+                                                    <constraint firstAttribute="width" constant="40" id="W4f-LM-xKj"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="US4-xe-VbN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSR-zN-R5Y" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="RPm-fI-xe9"/>
+                                                    <constraint firstAttribute="height" constant="40" id="e07-Kh-FG3"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uv7-Dq-ccb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jr-tU-gJG" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Vwz-Q6-Gkq"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jUq-2k-gRC"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbu-td-zp5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxh-mo-bv1" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0Qc-sf-Ebf"/>
+                                                    <constraint firstAttribute="width" constant="40" id="nJK-gD-yGZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ML9-d7-bXB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSS-p5-ypg" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="ZbO-0P-aeG"/>
+                                                    <constraint firstAttribute="height" constant="40" id="rJb-0O-Orn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Paw-UT-rnr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H2q-Fa-J2p">
+                                        <rect key="frame" x="0.0" y="225" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-AT-sX5" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="AU2-L9-Q9g"/>
+                                                    <constraint firstAttribute="height" constant="40" id="TWO-oS-Ue0"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYR-84-wrk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Av-rm-SUC" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Qmr-FA-6G3"/>
+                                                    <constraint firstAttribute="width" constant="40" id="hJN-kA-x2U"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8c-XT-U5r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF5-bj-pxn" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Loe-qF-6h0"/>
+                                                    <constraint firstAttribute="width" constant="40" id="cG8-1k-YeJ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVe-nB-Qao"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV7-Aj-4TX" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="DTw-CQ-vHj"/>
+                                                    <constraint firstAttribute="height" constant="40" id="SEH-HW-mds"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nla-Wz-vnq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q1-VI-AWW" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="BlO-k2-Qxy"/>
+                                                    <constraint firstAttribute="height" constant="40" id="uPF-5r-YNn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kkg-9p-IEr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwG-GO-kUy" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="elu-ik-HRp"/>
+                                                    <constraint firstAttribute="height" constant="40" id="qzK-xG-WiS"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbb-EB-exW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-9q-Kiw" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0Sh-FW-hPF"/>
+                                                    <constraint firstAttribute="width" constant="40" id="sp2-Iv-sUK"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14P-zw-lG6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBg-Qi-vxp" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="22M-MN-lfJ"/>
+                                                    <constraint firstAttribute="width" constant="40" id="TFv-ol-IEH"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PA8-7k-Em3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VFa-FJ-o0d">
+                                        <rect key="frame" x="0.0" y="270" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdR-0y-nBc" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LG3-0k-30p"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Qum-bu-1eL"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkd-J3-glt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSq-j0-VXk" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="R3l-gZ-Ma8"/>
+                                                    <constraint firstAttribute="width" constant="40" id="UgA-Dv-SwB"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sT-PX-DbF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-PU-zpY" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="PT9-ie-uKs"/>
+                                                    <constraint firstAttribute="width" constant="40" id="dol-Bh-hS2"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cT4-pL-Fdw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftW-LK-JRs" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="0BO-4G-nKw"/>
+                                                    <constraint firstAttribute="height" constant="40" id="xGR-0o-GaZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqV-gX-dmZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPK-g3-cOq" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="izI-YF-YlD"/>
+                                                    <constraint firstAttribute="width" constant="40" id="zOo-U4-Tv6"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kb9-w8-Se9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0X-Gp-92E" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="8IV-cO-1fN"/>
+                                                    <constraint firstAttribute="width" constant="40" id="zq8-vQ-Fcb"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVn-oh-Klz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT7-p4-DYn" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="HNA-pz-3sc"/>
+                                                    <constraint firstAttribute="height" constant="40" id="XGY-pb-WSZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6k-7R-SMk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="835-cV-RNN" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7lK-rY-e1N"/>
+                                                    <constraint firstAttribute="width" constant="40" id="vxJ-ww-hym"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laG-v5-hTr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ggj-N0-WcO">
+                                        <rect key="frame" x="0.0" y="315" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5k-ef-XdA" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HUJ-i8-wv9"/>
+                                                    <constraint firstAttribute="width" constant="40" id="kb7-Pb-MRb"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSL-FH-dBy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EO-vF-piP" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="dIL-Eb-jZW"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ugE-Dd-XNi"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1AB-3v-SGi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-6h-BBJ" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="1Kz-e6-kfx"/>
+                                                    <constraint firstAttribute="width" constant="40" id="F8D-v4-X4Y"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lra-UL-vcc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5S-Br-hQi" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="iMb-cr-1mv"/>
+                                                    <constraint firstAttribute="width" constant="40" id="m6h-UI-Sdr"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERy-X7-DX8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxd-aL-ruH" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="5Cx-6j-3dE"/>
+                                                    <constraint firstAttribute="height" constant="40" id="vwc-io-Cwg"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcU-pw-XA4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXI-su-c5M" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="93O-N9-JMd"/>
+                                                    <constraint firstAttribute="height" constant="40" id="rhv-LB-WsV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GrB-KX-aWA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTm-pL-QJj" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.500217362" green="0.49653905399999998" blue="0.51329744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="ChH-d5-aJ4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="o8Q-xs-0y4"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLv-Eo-fmW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qu-hR-M6l" customClass="GridCell" customModule="iOS_Midterm_Sequencer" customModuleProvider="target">
+                                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.50021736198623201" green="0.49653905395732162" blue="0.51329744170984459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3ho-en-HWy"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Rsm-KC-Vn7"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ToggleGridCell:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PnB-Pt-VtF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OqE-hs-dwP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C2S-Oc-HPM"/>
+                            <constraint firstItem="OqE-hs-dwP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NKE-MV-exE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

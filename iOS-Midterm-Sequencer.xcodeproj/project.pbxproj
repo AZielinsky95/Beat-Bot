@@ -13,6 +13,8 @@
 		CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406A209B9CD2003A285E /* Main.storyboard */; };
 		CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406D209B9CD2003A285E /* Assets.xcassets */; };
 		CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */; };
+		CAC54079209BAC30003A285E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54078209BAC30003A285E /* GridCell.swift */; };
+		CAC5407B209BADBC003A285E /* GridManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407A209BADBC003A285E /* GridManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CAC5406D209B9CD2003A285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC54070209B9CD2003A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC54072209B9CD3003A285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC54078209BAC30003A285E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		CAC5407A209BADBC003A285E /* GridManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridManager.swift; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,8 @@
 				CAC5406D209B9CD2003A285E /* Assets.xcassets */,
 				CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */,
 				CAC54072209B9CD3003A285E /* Info.plist */,
+				CAC54078209BAC30003A285E /* GridCell.swift */,
+				CAC5407A209BADBC003A285E /* GridManager.swift */,
 			);
 			path = "iOS-Midterm-Sequencer";
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC54069209B9CD2003A285E /* ViewController.swift in Sources */,
+				CAC5407B209BADBC003A285E /* GridManager.swift in Sources */,
 				CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */,
+				CAC54079209BAC30003A285E /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +338,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8EE67V363;
 				INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -346,7 +357,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8EE67V363;
 				INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

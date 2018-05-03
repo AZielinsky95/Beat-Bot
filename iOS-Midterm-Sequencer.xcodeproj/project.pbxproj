@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
 		CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
 		CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
 		CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406A209B9CD2003A285E /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Midterm_Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
 		CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC54068209B9CD2003A285E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CAC5406D209B9CD2003A285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC54070209B9CD2003A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC54072209B9CD3003A285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				CAC54065209B9CD2003A285E /* iOS-Midterm-Sequencer */,
 				CAC54064209B9CD2003A285E /* Products */,
+				FA80C4E85F060639E3A85A0E /* Pods */,
+				D9F77684F8768993892F58C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "iOS-Midterm-Sequencer";
 			sourceTree = "<group>";
 		};
+		D9F77684F8768993892F58C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA80C4E85F060639E3A85A0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */,
+				E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAC54075209B9CD3003A285E /* Build configuration list for PBXNativeTarget "iOS-Midterm-Sequencer" */;
 			buildPhases = (
+				A19526F8230EE11FC740115A /* [CP] Check Pods Manifest.lock */,
 				CAC5405F209B9CD2003A285E /* Sources */,
 				CAC54060209B9CD2003A285E /* Frameworks */,
 				CAC54061209B9CD2003A285E /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A19526F8230EE11FC740115A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Midterm-Sequencer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAC5405F209B9CD2003A285E /* Sources */ = {
@@ -278,15 +324,13 @@
 		};
 		CAC54076209B9CD3003A285E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8EE67V363;
 				INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +340,13 @@
 		};
 		CAC54077209B9CD3003A285E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8EE67V363;
 				INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

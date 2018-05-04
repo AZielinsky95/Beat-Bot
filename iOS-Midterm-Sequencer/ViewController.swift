@@ -72,14 +72,21 @@ class ViewController: UIViewController {
         mainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
+    
+    
 
     func animateColumn(x: Int)
     {
         for y in 0..<gridManager.gridY {
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: 0.2, animations:
+            {
                 self.gridManager.grid[y][x].alpha = 0.75
-            }) { _ in
-                UIView.animate(withDuration: 0.2, animations: {
+                //Get all active cells in this row
+                //trigger them!
+            })
+            { _ in
+                UIView.animate(withDuration: 0.2, animations:
+                {
                     self.gridManager.grid[y][x].alpha = 1
                 })
             }

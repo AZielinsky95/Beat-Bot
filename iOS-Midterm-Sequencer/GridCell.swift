@@ -10,7 +10,6 @@ import UIKit
 
 class GridCell: UIButton
 {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addTarget(self, action: #selector(toggleCell), for: UIControlEvents.touchUpInside)

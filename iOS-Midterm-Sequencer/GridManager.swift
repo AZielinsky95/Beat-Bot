@@ -17,11 +17,11 @@ class GridManager: NSObject
     
     func createGrid() {
         let frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        for i in 0..<gridX {
+        for y in 0..<gridY {
             grid.append(Array())
-            for j in 0..<gridY {
-                self.grid[i].append(GridCell(frame: frame))
-                self.grid[i][j].backgroundColor = GridCell.inActiveColor
+            for x in 0..<gridX {
+                self.grid[y].append(GridCell(frame: frame))
+                self.grid[y][x].backgroundColor = GridCell.inActiveColor
             }
         }
     }

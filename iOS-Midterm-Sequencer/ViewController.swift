@@ -7,14 +7,35 @@
 //
 
 import UIKit
+import AudioKit
 
 class ViewController: UIViewController {
 
     let gridManager = GridManager()
+    let audioManager = AudioManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.SetupGrid()
+
+        audioManager.metronome.callback =
+        {
+            let deadlineTime = DispatchTime.now() + (90 / self.audioManager.tempo) / 10.0
+            DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+            {
+                self.audioManager.currentStep += 1;
+                if(self.audioManager.currentStep > (self.gridManager.gridX - 1))
+                {
+                    self.audioManager.currentStep = 0
+                }
+                print("TICK")
+                self.animateColumn(x: self.audioManager.currentStep)
+            }
+        }
+        
+        AudioKit.output = self.audioManager.metronome
+        try! AudioKit.start()
+        audioManager.startSequencer()
     }
     
     func SetupGrid()

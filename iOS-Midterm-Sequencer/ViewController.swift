@@ -10,8 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        self.SetupGrid()
+    }
+    
+    func SetupGrid()
+    {
         // Do any additional setup after loading the view, typically from a nib.
         let gridManager = GridManager()
         gridManager.createGrid()

@@ -54,8 +54,19 @@ class ViewController: UIViewController {
 
     func animateColumn(x: Int)
     {
-        
+        for y in 0..<gridManager.gridY {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.gridManager.grid[y][x].alpha = 0.75
+            }) { _ in
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.gridManager.grid[y][x].alpha = 1
+                })
+            }
+        }
     }
     
+    @IBAction func testColumnAnimation(_ sender: UIButton) {
+        animateColumn(x: 0)
+    }
 }
 

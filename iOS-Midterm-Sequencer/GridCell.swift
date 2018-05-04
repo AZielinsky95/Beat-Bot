@@ -10,8 +10,15 @@ import UIKit
 
 class GridCell: UIButton
 {
-    override init(frame: CGRect) {
+    var isActive : Bool = false
+    let activeColor : UIColor = UIColor.green;
+    var gridNote : Int = 0;
+    public static let inActiveColor : UIColor = UIColor.gray;
+    
+    init(frame: CGRect,note:Int)
+    {
         super.init(frame: frame)
+        self.gridNote = note
         self.addTarget(self, action: #selector(toggleCell), for: UIControlEvents.touchUpInside)
     }
     
@@ -19,9 +26,11 @@ class GridCell: UIButton
         fatalError("don't call this.")
     }
     
-    var isActive : Bool = false
-    let activeColor : UIColor = UIColor.green;
-    public static let inActiveColor : UIColor = UIColor.gray;
+    func playNote()
+    {
+        SoundBank.playNote(note: self.gridNote, velocity: 100, channel: 1)
+    }
+    
     
     @objc func toggleCell()
     {

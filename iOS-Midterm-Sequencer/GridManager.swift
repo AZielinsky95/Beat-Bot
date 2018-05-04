@@ -20,7 +20,7 @@ class GridManager: NSObject
         for y in 0..<gridY {
             grid.append(Array())
             for x in 0..<gridX {
-                self.grid[y].append(GridCell(frame: frame))
+                self.grid[y].append(GridCell(frame: frame,note: SoundBank.cMajor[y]))
                 self.grid[y][x].backgroundColor = GridCell.inActiveColor
             }
         }

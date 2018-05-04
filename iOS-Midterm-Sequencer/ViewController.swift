@@ -82,7 +82,10 @@ class ViewController: UIViewController {
             {
                 self.gridManager.grid[y][x].alpha = 0.75
                 //Get all active cells in this row
-                //trigger them!
+                if(self.gridManager.grid[y][x].isActive)
+                {
+                   self.gridManager.grid[y][x].playNote()
+                }
             })
             { _ in
                 UIView.animate(withDuration: 0.2, animations:

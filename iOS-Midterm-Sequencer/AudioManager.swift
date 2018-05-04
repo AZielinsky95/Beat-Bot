@@ -14,13 +14,14 @@ class AudioManager: NSObject
     
     var audioplayer = AVAudioPlayer()
     let metronome = AKMetronome()
-    var tempo = 60.0
+    var tempo = 120.0
     var currentStep = -1
     
     override init()
     {
         self.metronome.frequency1 = 0;
         self.metronome.frequency2 = 0;
+        SoundBank.loadPiano()
     }
     
     func playSound()

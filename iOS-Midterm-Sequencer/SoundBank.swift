@@ -11,34 +11,34 @@ import AudioKit
 
 class SoundBank: NSObject
 {
-    let pulse = 0.23
+    private static let pulse = 0.23
     
-    let sampler = AKAppleSampler()
+    private static let sampler = AKAppleSampler()
     
     public static let cMajor = [72, 74, 76, 77, 79, 81, 83, 84]
     
-    func loadPiano()
+    public static func loadPiano()
     {
-        setUpSampler()
-        try! sampler.loadWav("FM Piano")
+        SoundBank.setUpSampler()
+        try! SoundBank.sampler.loadWav("FM Piano")
     }
     
-    func setUpSampler()
+    private static func setUpSampler()
     {
-        let ampedSampler = AKBooster(sampler, gain: 3.0)
+        let ampedSampler = AKBooster(SoundBank.sampler, gain: 3.0)
         let delay  = AKDelay(ampedSampler)
-        delay.time = pulse * 1.5
+        delay.time = SoundBank.pulse * 1.5
         delay.dryWetMix = 0.0
         delay.feedback = 0.0
         let mix = AKMixer(delay)
         let reverb = AKReverb(mix)
         AudioKit.output = reverb
-        try! AudioKit.start()
+//        try! AudioKit.start()
     }
     
-    func playNote(note:Int,velocity:Double,channel:Int)
+    public static func playNote(note:Int,velocity:Double,channel:Int)
     {
-        try! sampler.play(noteNumber: MIDINoteNumber(note), velocity: MIDIVelocity(velocity), channel: MIDIChannel(channel))
+        try! SoundBank.sampler.play(noteNumber: MIDINoteNumber(note), velocity: MIDIVelocity(velocity), channel: MIDIChannel(channel))
     }
     
     //    for note in cMajor {

@@ -18,8 +18,6 @@ class ViewController: UIViewController {
         
         let mainStackView = UIStackView()
         mainStackView.axis = .vertical
-//        mainStackView.distribution = .fillEqually
-//        mainStackView.alignment = .fill
         mainStackView.spacing = 5
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -27,8 +25,6 @@ class ViewController: UIViewController {
         {
             let rowStackView = UIStackView()
             rowStackView.axis = .horizontal
-//            rowStackView.distribution = .fillEqually
-//            rowStackView.alignment = .fill
             rowStackView.spacing = 5
             rowStackView.translatesAutoresizingMaskIntoConstraints = false
             
@@ -48,11 +44,5 @@ class ViewController: UIViewController {
         mainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
-
-    @IBAction func ToggleGridCell(_ sender: GridCell)
-    {
-        sender.toggleCell()
-    }
-    
 }
 

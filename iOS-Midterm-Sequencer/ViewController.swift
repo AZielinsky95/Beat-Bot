@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                 {
                     self.audioManager.currentStep = 0
                 }
-                print("TICK")
+              //  print("TICK")
                 self.animateColumn(x: self.audioManager.currentStep)
             }
         }
@@ -73,8 +73,6 @@ class ViewController: UIViewController {
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
     
-    
-
     func animateColumn(x: Int)
     {
         for y in 0..<gridManager.gridY {

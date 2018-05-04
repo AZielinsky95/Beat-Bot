@@ -31,6 +31,15 @@ class GridCell: UIButton
         SoundBank.playNote(note: self.gridNote, velocity: 100, channel: 1)
     }
     
+    func scaleUp()
+    {
+      self.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+    }
+    
+    func setOriginalScale()
+    {
+      self.transform = CGAffineTransform.identity
+    }
     
     @objc func toggleCell()
     {

@@ -11,8 +11,6 @@ import AudioKit
 
 class AudioManager: NSObject
 {
-    
-    var audioplayer = AVAudioPlayer()
     let metronome = AKMetronome()
     var tempo = 120.0
     var currentStep = -1
@@ -21,27 +19,23 @@ class AudioManager: NSObject
     {
         self.metronome.frequency1 = 0;
         self.metronome.frequency2 = 0;
+        self.metronome.tempo = tempo;
         SoundBank.loadPiano()
-    }
-    
-    func playSound()
-    {
-        self.audioplayer.play()
     }
     
     func setTempo(tempo:Double)
     {
-        self.tempo = tempo;
+        self.metronome.tempo = tempo;
     }
     
     func startSequencer()
     {
-        metronome.start();
+        self.metronome.start();
     }
     
     func stopSequencer()
     {
-        metronome.stop();
+        self.metronome.stop();
     }
 
 }

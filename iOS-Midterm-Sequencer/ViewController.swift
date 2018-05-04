@@ -61,14 +61,14 @@ class ViewController: UIViewController {
         
         let mainStackView = UIStackView()
         mainStackView.axis = .vertical
-        mainStackView.spacing = 2
+        mainStackView.spacing = 5
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         for y in 0..<gridManager.gridY
         {
             let rowStackView = UIStackView()
             rowStackView.axis = .horizontal
-            rowStackView.spacing = 2
+            rowStackView.spacing = 5
             rowStackView.translatesAutoresizingMaskIntoConstraints = false
             
             for x in 0..<gridManager.gridX

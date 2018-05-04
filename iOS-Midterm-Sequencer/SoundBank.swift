@@ -17,9 +17,16 @@ class SoundBank: NSObject
     
     public static var cMajor = [72, 74, 76, 77, 79, 81, 83, 84]
     
-    public static var cMajor16 = [48, 74, 76, 77, 79, 81, 83, 84, 72 + 16, 74 + 16, 76 + 16, 77 + 16, 79 + 16, 81 + 16, 83 + 16, 112]
+    public static var cMinor = [72, 74, 75, 77, 79, 80, 82, 84]
+    
+    //public static var cMajor16 = [48, 74, 76, 77, 79, 81, 83, 84, 72 + 16, 74 + 16, 76 + 16, 77 + 16, 79 + 16, 81 + 16, 83 + 16, 112]
     
     public static var cMajorChord = [64, 68, 71, 75, 76, 80, 83, 87]
+    
+    public static func shiftOctave(octave:Int,scale:[Int]) ->[Int]
+    {
+        return scale.map { $0 + (12 * octave) }
+    }
     
     public static func loadPiano()
     {

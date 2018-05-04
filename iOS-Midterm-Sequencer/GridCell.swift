@@ -28,7 +28,7 @@ class GridCell: UIButton
     
     func playNote()
     {
-        SoundBank.playNote(note: self.gridNote, velocity: 100, channel: 1)
+        SoundBank.playNote(note: self.gridNote, velocity: 90, channel: 1)
     }
     
     func scaleUp()

@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.SetupGrid()
+       
+        self.createGridForScreenSize()
 
         audioManager.metronome.callback =
         {
@@ -28,7 +29,6 @@ class ViewController: UIViewController {
                 {
                     self.audioManager.currentStep = 0
                 }
-              //  print("TICK")
                 self.animateColumn(x: self.audioManager.currentStep)
             }
         }
@@ -38,11 +38,26 @@ class ViewController: UIViewController {
         audioManager.startSequencer()
     }
     
-    func SetupGrid()
+    func createGridForScreenSize()
     {
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        gridManager.createGrid()
+            switch UIScreen.main.nativeBounds.width {
+            case 640:
+                setupGrid(width:30,height:30) //iPhone 5, 5C, 5S, iPod Touch 5g
+            case 750,1125:
+                setupGrid(width:40,height:40) //iPhone 6, iPhone 6s, iPhone 7/8 OR  //print("iphonex")
+            case 1242:
+                setupGrid(width:45,height:45) //iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus
+            case 1536:
+                setupGrid(width:55,height:55)//iPad 3, iPad 4, iPad Air, iPad Air 2, 9.7-inch iPad Pro
+            default:
+                setupGrid(width:40,height:40) 
+            }
+    }
+    
+    func setupGrid(width:Int,height:Int)
+    {
+
+       gridManager.createGrid(width:width,height:height)
         
         let mainStackView = UIStackView()
         mainStackView.axis = .vertical
@@ -60,8 +75,8 @@ class ViewController: UIViewController {
             {
                 // add each cell to the row stackview
                 rowStackView.addArrangedSubview(gridManager.grid[y][x])
-                gridManager.grid[y][x].widthAnchor.constraint(equalToConstant: 40).isActive = true
-                gridManager.grid[y][x].heightAnchor.constraint(equalToConstant: 40).isActive = true
+                gridManager.grid[y][x].widthAnchor.constraint(equalToConstant: CGFloat(width)).isActive = true
+                gridManager.grid[y][x].heightAnchor.constraint(equalToConstant: CGFloat(height)).isActive = true
             }
             // add row to main stackview
             mainStackView.addArrangedSubview(rowStackView)
@@ -69,6 +84,7 @@ class ViewController: UIViewController {
         // add main stackview to self.view as a subview
         self.view.addSubview(mainStackView)
         // main stackview center horizontally and vertically
+        
         mainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }

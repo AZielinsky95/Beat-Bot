@@ -13,6 +13,10 @@ class ViewController: UIViewController {
 
     let gridManager = GridManager()
     let audioManager = AudioManager()
+    var mainStackView = UIStackView()
+    
+    @IBOutlet weak var topMenuView: UIView!
+    @IBOutlet weak var bottomMenuView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,10 +63,10 @@ class ViewController: UIViewController {
 
        gridManager.createGrid(width:width,height:height)
         
-        let mainStackView = UIStackView()
-        mainStackView.axis = .vertical
-        mainStackView.spacing = 5
-        mainStackView.translatesAutoresizingMaskIntoConstraints = false
+        self.mainStackView = UIStackView()
+        self.mainStackView.axis = .vertical
+        self.mainStackView.spacing = 5
+        self.mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         for y in 0..<gridManager.gridY
         {
@@ -79,14 +83,16 @@ class ViewController: UIViewController {
                 gridManager.grid[y][x].heightAnchor.constraint(equalToConstant: CGFloat(height)).isActive = true
             }
             // add row to main stackview
-            mainStackView.addArrangedSubview(rowStackView)
+            self.mainStackView.addArrangedSubview(rowStackView)
         }
         // add main stackview to self.view as a subview
         self.view.addSubview(mainStackView)
         // main stackview center horizontally and vertically
         
-        mainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        self.mainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        self.mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        
+        self.alignMenus()
     }
     
     func animateColumn(x: Int)
@@ -112,8 +118,15 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func testColumnAnimation(_ sender: UIButton) {
-        animateColumn(x: 0)
+    func alignMenus()
+    {
+        self.topMenuView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        self.topMenuView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        self.topMenuView.bottomAnchor.constraint(equalTo: self.mainStackView.topAnchor, constant: -10).isActive = true
+        
+        self.bottomMenuView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        self.bottomMenuView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        self.bottomMenuView.topAnchor.constraint(equalTo: self.mainStackView.bottomAnchor, constant: 30).isActive = true
     }
 }
 

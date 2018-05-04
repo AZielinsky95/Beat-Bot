@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad()
-    {
+    let gridManager = GridManager()
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.SetupGrid()
     }
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
     func SetupGrid()
     {
         // Do any additional setup after loading the view, typically from a nib.
-        let gridManager = GridManager()
+        
         gridManager.createGrid()
         
         let mainStackView = UIStackView()
@@ -49,6 +50,23 @@ class ViewController: UIViewController {
         // main stackview center horizontally and vertically
         mainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+    }
+
+    func animateColumn(x: Int)
+    {
+        for y in 0..<gridManager.gridY {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.gridManager.grid[y][x].alpha = 0.75
+            }) { _ in
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.gridManager.grid[y][x].alpha = 1
+                })
+            }
+        }
+    }
+    
+    @IBAction func testColumnAnimation(_ sender: UIButton) {
+        animateColumn(x: 0)
     }
 }
 

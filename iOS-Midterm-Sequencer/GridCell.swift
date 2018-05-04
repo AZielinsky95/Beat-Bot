@@ -11,7 +11,7 @@ import UIKit
 class GridCell: UIButton
 {
     var isActive : Bool = false
-    let activeColor : UIColor = UIColor.green;
+    let activeColor : UIColor = UIColor.cyan;
     var gridNote : Int = 0;
     public static let inActiveColor : UIColor = UIColor.gray;
     

@@ -18,6 +18,10 @@
 		CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407C209BB3EC003A285E /* AudioManager.swift */; };
 		CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54082209CA9AB003A285E /* SoundBank.swift */; };
 		CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54084209CA9C0003A285E /* FM Piano.wav */; };
+		CAC54087209CBD1D003A285E /* Marimba.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54086209CBD1C003A285E /* Marimba.wav */; };
+		CAC5408C209CBEE6003A285E /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54089209CBEE6003A285E /* Kick.wav */; };
+		CAC5408D209CBEE6003A285E /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408A209CBEE6003A285E /* Snare.wav */; };
+		CAC5408E209CBEE6003A285E /* Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408B209CBEE6003A285E /* Hat.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		CAC5407C209BB3EC003A285E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		CAC54082209CA9AB003A285E /* SoundBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBank.swift; sourceTree = "<group>"; };
 		CAC54084209CA9C0003A285E /* FM Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "FM Piano.wav"; sourceTree = "<group>"; };
+		CAC54086209CBD1C003A285E /* Marimba.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Marimba.wav; sourceTree = "<group>"; };
+		CAC54089209CBEE6003A285E /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
+		CAC5408A209CBEE6003A285E /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
+		CAC5408B209CBEE6003A285E /* Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hat.wav; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +79,7 @@
 		CAC54065209B9CD2003A285E /* iOS-Midterm-Sequencer */ = {
 			isa = PBXGroup;
 			children = (
+				CAC54088209CBDC8003A285E /* Resources */,
 				CAC54066209B9CD2003A285E /* AppDelegate.swift */,
 				CAC54068209B9CD2003A285E /* ViewController.swift */,
 				CAC5406A209B9CD2003A285E /* Main.storyboard */,
@@ -78,12 +87,23 @@
 				CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */,
 				CAC54072209B9CD3003A285E /* Info.plist */,
 				CAC54078209BAC30003A285E /* GridCell.swift */,
-				CAC54084209CA9C0003A285E /* FM Piano.wav */,
 				CAC5407A209BADBC003A285E /* GridManager.swift */,
 				CAC5407C209BB3EC003A285E /* AudioManager.swift */,
 				CAC54082209CA9AB003A285E /* SoundBank.swift */,
 			);
 			path = "iOS-Midterm-Sequencer";
+			sourceTree = "<group>";
+		};
+		CAC54088209CBDC8003A285E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAC5408B209CBEE6003A285E /* Hat.wav */,
+				CAC54089209CBEE6003A285E /* Kick.wav */,
+				CAC5408A209CBEE6003A285E /* Snare.wav */,
+				CAC54086209CBD1C003A285E /* Marimba.wav */,
+				CAC54084209CA9C0003A285E /* FM Piano.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D9F77684F8768993892F58C9 /* Frameworks */ = {
@@ -162,9 +182,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC5408E209CBEE6003A285E /* Hat.wav in Resources */,
+				CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
 				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
 				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
+				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
+				CAC5408C209CBEE6003A285E /* Kick.wav in Resources */,
 				CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

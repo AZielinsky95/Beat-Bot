@@ -29,7 +29,6 @@ class ViewController: UIViewController {
                 {
                     self.audioManager.currentStep = 0
                 }
-              //  print("TICK")
                 self.animateColumn(x: self.audioManager.currentStep)
             }
         }
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
                 setupGrid(width:40,height:40) 
             }
     }
-
+    
     func setupGrid(width:Int,height:Int)
     {
 

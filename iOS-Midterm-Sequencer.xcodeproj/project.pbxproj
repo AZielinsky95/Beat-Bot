@@ -22,6 +22,8 @@
 		CAC5408C209CBEE6003A285E /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54089209CBEE6003A285E /* Kick.wav */; };
 		CAC5408D209CBEE6003A285E /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408A209CBEE6003A285E /* Snare.wav */; };
 		CAC5408E209CBEE6003A285E /* Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408B209CBEE6003A285E /* Hat.wav */; };
+		CAC54091209CD6E5003A285E /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408F209CD6E4003A285E /* guitar.wav */; };
+		CAC54092209CD6E5003A285E /* strings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54090209CD6E4003A285E /* strings.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		CAC54089209CBEE6003A285E /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
 		CAC5408A209CBEE6003A285E /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
 		CAC5408B209CBEE6003A285E /* Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hat.wav; sourceTree = "<group>"; };
+		CAC5408F209CD6E4003A285E /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		CAC54090209CD6E4003A285E /* strings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = strings.wav; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +101,8 @@
 		CAC54088209CBDC8003A285E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CAC5408F209CD6E4003A285E /* guitar.wav */,
+				CAC54090209CD6E4003A285E /* strings.wav */,
 				CAC5408B209CBEE6003A285E /* Hat.wav */,
 				CAC54089209CBEE6003A285E /* Kick.wav */,
 				CAC5408A209CBEE6003A285E /* Snare.wav */,
@@ -185,9 +191,11 @@
 				CAC5408E209CBEE6003A285E /* Hat.wav in Resources */,
 				CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
 				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
+				CAC54092209CD6E5003A285E /* strings.wav in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
 				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
 				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
+				CAC54091209CD6E5003A285E /* guitar.wav in Resources */,
 				CAC5408C209CBEE6003A285E /* Kick.wav in Resources */,
 				CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */,
 			);

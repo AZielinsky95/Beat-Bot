@@ -15,7 +15,9 @@ class SoundBank: NSObject
     
     private static let sampler = AKAppleSampler()
     
-    public static let cMajor = [72, 74, 76, 77, 79, 81, 83, 84]
+    public static var cMajor = [72, 74, 76, 77, 79, 81, 83, 84]
+    
+    public static var cMajorChord = [72-8, 76-8, 79-8, 83-8, 84-8, 88-8, 91-8, 95-8]
     
     public static func loadPiano()
     {
@@ -29,6 +31,20 @@ class SoundBank: NSObject
         try! SoundBank.sampler.loadWav("Marimba")
     }
     
+    public static func loadGuitar()
+    {
+        SoundBank.setUpSampler()
+        try! SoundBank.sampler.loadWav("guitar")
+    }
+    
+    
+    public static func loadStrings()
+    {
+        SoundBank.setUpSampler()
+        try! SoundBank.sampler.loadWav("strings")
+    }
+    
+    
     private static func setUpSampler()
     {
         let ampedSampler = AKBooster(SoundBank.sampler, gain: 3.0)
@@ -37,21 +53,15 @@ class SoundBank: NSObject
         delay.dryWetMix = 0.0
         delay.feedback = 0.0
         let mix = AKMixer(delay)
-        let reverb = AKReverb(mix)
+        let reverb =  AKReverb(mix)
+        reverb.dryWetMix = 0.5
+
         AudioKit.output = reverb
 //        try! AudioKit.start()
     }
-    
-    
     
     public static func playNote(note:Int,velocity:Double,channel:Int)
     {
         try! SoundBank.sampler.play(noteNumber: MIDINoteNumber(note), velocity: MIDIVelocity(velocity), channel: MIDIChannel(channel))
     }
-    
-    //    for note in cMajor {
-    //    try! sampler.play(noteNumber: MIDINoteNumber(note), velocity: 100, channel: 1)
-    //    sleep(1)
-    //    }
-    
 }

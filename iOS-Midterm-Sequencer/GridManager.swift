@@ -15,7 +15,7 @@ class GridManager: NSObject
     let gridY : Int = 8
 
     
-    func createGrid() {
+    func createGrid(width:Int,height:Int) {
         let frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         for y in 0..<gridY {
             grid.append(Array())

@@ -16,6 +16,8 @@
 		CAC54079209BAC30003A285E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54078209BAC30003A285E /* GridCell.swift */; };
 		CAC5407B209BADBC003A285E /* GridManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407A209BADBC003A285E /* GridManager.swift */; };
 		CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407C209BB3EC003A285E /* AudioManager.swift */; };
+		CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54082209CA9AB003A285E /* SoundBank.swift */; };
+		CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54084209CA9C0003A285E /* FM Piano.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		CAC54078209BAC30003A285E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		CAC5407A209BADBC003A285E /* GridManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridManager.swift; sourceTree = "<group>"; };
 		CAC5407C209BB3EC003A285E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		CAC54082209CA9AB003A285E /* SoundBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBank.swift; sourceTree = "<group>"; };
+		CAC54084209CA9C0003A285E /* FM Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "FM Piano.wav"; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +78,10 @@
 				CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */,
 				CAC54072209B9CD3003A285E /* Info.plist */,
 				CAC54078209BAC30003A285E /* GridCell.swift */,
+				CAC54084209CA9C0003A285E /* FM Piano.wav */,
 				CAC5407A209BADBC003A285E /* GridManager.swift */,
 				CAC5407C209BB3EC003A285E /* AudioManager.swift */,
+				CAC54082209CA9AB003A285E /* SoundBank.swift */,
 			);
 			path = "iOS-Midterm-Sequencer";
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 			files = (
 				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
+				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
 				CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,7 @@
 				CAC54069209B9CD2003A285E /* ViewController.swift in Sources */,
 				CAC5407B209BADBC003A285E /* GridManager.swift in Sources */,
 				CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */,
+				CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */,
 				CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */,
 				CAC54079209BAC30003A285E /* GridCell.swift in Sources */,
 			);

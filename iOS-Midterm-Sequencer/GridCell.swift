@@ -10,15 +10,25 @@ import UIKit
 
 class GridCell: UIButton
 {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.addTarget(self, action: #selector(toggleCell), for: UIControlEvents.touchUpInside)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("don't call this.")
+    }
+    
     var isActive : Bool = false
     let activeColor : UIColor = UIColor.green;
-     let inActiveColor : UIColor = UIColor.gray;
+    public static let inActiveColor : UIColor = UIColor.gray;
     
-    func toggleCell()
+    @objc func toggleCell()
     {
         if(self.isActive)
         {
-            self.backgroundColor = inActiveColor;
+            self.backgroundColor = GridCell.inActiveColor;
             self.isActive = false;
         }
         else

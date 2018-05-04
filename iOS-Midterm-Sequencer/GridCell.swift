@@ -11,7 +11,7 @@ import UIKit
 class GridCell: UIButton
 {
     var isActive : Bool = false
-    let activeColor : UIColor = UIColor.green;
+    let activeColor : UIColor = UIColor.cyan;
     var gridNote : Int = 0;
     public static let inActiveColor : UIColor = UIColor.gray;
     
@@ -31,6 +31,15 @@ class GridCell: UIButton
         SoundBank.playNote(note: self.gridNote, velocity: 100, channel: 1)
     }
     
+    func scaleUp()
+    {
+      self.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+    }
+    
+    func setOriginalScale()
+    {
+      self.transform = CGAffineTransform.identity
+    }
     
     @objc func toggleCell()
     {

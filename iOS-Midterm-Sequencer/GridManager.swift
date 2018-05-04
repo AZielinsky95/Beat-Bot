@@ -26,4 +26,18 @@ class GridManager: NSObject
         }
     }
     
+    func resetGrid()
+    {
+       for row in self.grid
+       {
+         for cell in row
+         {
+            if(cell.isActive)
+            {
+                cell.toggleCell()
+            }
+         }
+       }
+    }
+    
 }

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
         audioManager.metronome.callback =
         {
-            let deadlineTime = DispatchTime.now() + (90 / self.audioManager.tempo) / 10.0
+            let deadlineTime = DispatchTime.now() + (self.audioManager.tempo / self.audioManager.metronome.tempo) / 10.0
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
                 self.audioManager.currentStep += 1;
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                 {
                     self.audioManager.currentStep = 0
                 }
-                print("TICK")
+              //  print("TICK")
                 self.animateColumn(x: self.audioManager.currentStep)
             }
         }
@@ -73,8 +73,6 @@ class ViewController: UIViewController {
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
     
-    
-
     func animateColumn(x: Int)
     {
         for y in 0..<gridManager.gridY {
@@ -85,12 +83,14 @@ class ViewController: UIViewController {
                 if(self.gridManager.grid[y][x].isActive)
                 {
                    self.gridManager.grid[y][x].playNote()
+                   self.gridManager.grid[y][x].scaleUp()
                 }
             })
             { _ in
                 UIView.animate(withDuration: 0.2, animations:
                 {
                     self.gridManager.grid[y][x].alpha = 1
+                    self.gridManager.grid[y][x].setOriginalScale()
                 })
             }
         }

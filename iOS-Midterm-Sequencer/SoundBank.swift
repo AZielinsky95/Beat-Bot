@@ -23,6 +23,12 @@ class SoundBank: NSObject
         try! SoundBank.sampler.loadWav("FM Piano")
     }
     
+    public static func loadMarimba()
+    {
+        SoundBank.setUpSampler()
+        try! SoundBank.sampler.loadWav("Marimba")
+    }
+    
     private static func setUpSampler()
     {
         let ampedSampler = AKBooster(SoundBank.sampler, gain: 3.0)
@@ -35,6 +41,8 @@ class SoundBank: NSObject
         AudioKit.output = reverb
 //        try! AudioKit.start()
     }
+    
+    
     
     public static func playNote(note:Int,velocity:Double,channel:Int)
     {

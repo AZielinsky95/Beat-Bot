@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let gridManager = GridManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let gridManager = GridManager()
+        
         gridManager.createGrid()
         
         let mainStackView = UIStackView()
@@ -23,7 +25,7 @@ class ViewController: UIViewController {
         mainStackView.spacing = 5
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
-        for i in 0..<gridManager.gridX
+        for y in 0..<gridManager.gridY
         {
             let rowStackView = UIStackView()
             rowStackView.axis = .horizontal
@@ -32,12 +34,12 @@ class ViewController: UIViewController {
             rowStackView.spacing = 5
             rowStackView.translatesAutoresizingMaskIntoConstraints = false
             
-            for j in 0..<gridManager.gridY
+            for x in 0..<gridManager.gridX
             {
                 // add each cell to the row stackview
-                rowStackView.addArrangedSubview(gridManager.grid[i][j])
-                gridManager.grid[i][j].widthAnchor.constraint(equalToConstant: 40).isActive = true
-                gridManager.grid[i][j].heightAnchor.constraint(equalToConstant: 40).isActive = true
+                rowStackView.addArrangedSubview(gridManager.grid[y][x])
+                gridManager.grid[y][x].widthAnchor.constraint(equalToConstant: 40).isActive = true
+                gridManager.grid[y][x].heightAnchor.constraint(equalToConstant: 40).isActive = true
             }
             // add row to main stackview
             mainStackView.addArrangedSubview(rowStackView)
@@ -49,9 +51,9 @@ class ViewController: UIViewController {
         mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
 
-    @IBAction func ToggleGridCell(_ sender: GridCell)
+    func animateColumn(x: Int)
     {
-        sender.toggleCell()
+        
     }
     
 }

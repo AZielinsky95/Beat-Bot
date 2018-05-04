@@ -12,7 +12,7 @@ import AudioKit
 class AudioManager: NSObject
 {
     let metronome = AKMetronome()
-    var tempo = 120.0
+    var tempo = 135.0
     var currentStep = -1
     
     override init()

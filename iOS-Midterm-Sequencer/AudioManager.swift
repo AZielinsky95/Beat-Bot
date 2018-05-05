@@ -15,12 +15,24 @@ class AudioManager: NSObject
     var tempo = 160.0
     var currentStep = -1
     
+    var volume: Double
+    {
+        get
+        {
+            return SoundBank.mix.volume
+        }
+        set
+        {
+            SoundBank.mix.volume = newValue
+        }
+    }
+    
     override init()
     {
         self.metronome.frequency1 = 0;
         self.metronome.frequency2 = 0;
         self.metronome.tempo = tempo;
-        SoundBank.loadGuitar()
+        SoundBank.loadMarimba()
     }
     
     func setTempo(tempo:Double)

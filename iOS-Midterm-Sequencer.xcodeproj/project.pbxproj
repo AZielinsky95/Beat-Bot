@@ -37,6 +37,7 @@
 		CAC5408E209CBEE6003A285E /* Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408B209CBEE6003A285E /* Hat.wav */; };
 		CAC54091209CD6E5003A285E /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408F209CD6E4003A285E /* guitar.wav */; };
 		CAC54092209CD6E5003A285E /* strings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54090209CD6E4003A285E /* strings.wav */; };
+		CAC54096209D73A2003A285E /* Vibes.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54095209D73A2003A285E /* Vibes.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		CAC5408B209CBEE6003A285E /* Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hat.wav; sourceTree = "<group>"; };
 		CAC5408F209CD6E4003A285E /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		CAC54090209CD6E4003A285E /* strings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = strings.wav; sourceTree = "<group>"; };
+		CAC54095209D73A2003A285E /* Vibes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Vibes.wav; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		2745126C209D3BEA004524F6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				CAC54095209D73A2003A285E /* Vibes.wav */,
 				CAC5408F209CD6E4003A285E /* guitar.wav */,
 				CAC54090209CD6E4003A285E /* strings.wav */,
 				CAC5408B209CBEE6003A285E /* Hat.wav */,
@@ -265,6 +268,7 @@
 				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
 				CAC54091209CD6E5003A285E /* guitar.wav in Resources */,
 				CAC5408C209CBEE6003A285E /* Kick.wav in Resources */,
+				CAC54096209D73A2003A285E /* Vibes.wav in Resources */,
 				CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

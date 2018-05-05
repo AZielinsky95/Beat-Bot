@@ -46,7 +46,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-lq-Cab" userLabel="Play/Stop Button View">
-                                        <rect key="frame" x="111" y="30.5" width="73" height="60.5"/>
+                                        <rect key="frame" x="111" y="30.5" width="60" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kE-pH-rnC" userLabel="Play Button">
                                                 <rect key="frame" x="3" y="3" width="67" height="54.5"/>
@@ -156,13 +156,13 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dqb-lq-Cab" firstAttribute="leading" secondItem="Q8t-dC-oFZ" secondAttribute="trailing" constant="20" id="2Yh-hs-5EG"/>
+                                    <constraint firstItem="dqb-lq-Cab" firstAttribute="leading" secondItem="Q8t-dC-oFZ" secondAttribute="trailing" constant="20" id="2MF-94-Rft"/>
                                     <constraint firstAttribute="bottom" secondItem="g46-8N-E12" secondAttribute="bottom" constant="10" id="5XR-50-lPk"/>
                                     <constraint firstItem="Q8t-dC-oFZ" firstAttribute="centerY" secondItem="dqb-lq-Cab" secondAttribute="centerY" id="Jt7-TX-MZ7"/>
                                     <constraint firstItem="g46-8N-E12" firstAttribute="top" secondItem="Y6Q-vP-e72" secondAttribute="top" constant="20" id="c5l-Db-2t2"/>
-                                    <constraint firstItem="g46-8N-E12" firstAttribute="leading" secondItem="dqb-lq-Cab" secondAttribute="trailing" constant="20" id="hUt-OV-Y4l"/>
                                     <constraint firstItem="dqb-lq-Cab" firstAttribute="centerY" secondItem="g46-8N-E12" secondAttribute="centerY" id="lOF-vR-ANa"/>
                                     <constraint firstItem="Q8t-dC-oFZ" firstAttribute="leading" secondItem="Y6Q-vP-e72" secondAttribute="leading" constant="48" id="lvY-g6-xOs"/>
+                                    <constraint firstItem="g46-8N-E12" firstAttribute="leading" secondItem="dqb-lq-Cab" secondAttribute="trailing" constant="33" id="ntr-D1-xGg"/>
                                     <constraint firstItem="Q8t-dC-oFZ" firstAttribute="height" secondItem="dqb-lq-Cab" secondAttribute="height" multiplier="0.5" id="nwE-66-0WY"/>
                                     <constraint firstAttribute="trailing" secondItem="g46-8N-E12" secondAttribute="trailing" constant="10" id="tfO-wz-EGH"/>
                                 </constraints>

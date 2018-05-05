@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var instrument04Button: UIButton!
     @IBOutlet weak var instrument05Button: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +54,25 @@ class ViewController: UIViewController {
         try! AudioKit.start()
         
         self.setupSliders()
-        
     }
+    
+//    override func viewDidLayoutSubviews()
+//    {
+//        self.makeButtonsCircular()
+//    }
+//
+//    func makeButtonsCircular()
+//    {
+//      //  let position = self.playButton.superview!.center
+//       // self.playButton.superview!.frame = CGRect(x: position.x, y: position.y, width: 100, height: 100)
+//       // self.playButton.frame = CGRect(x:  self.playButton.center.x, y: self.playButton.center.y, width: 50, height: 50)
+//        self.playButton.superview?.layer.cornerRadius = 0.5 * (self.playButton.superview?.bounds.size.width)!
+//        self.playButton.layer.cornerRadius = 0.5 * playButton.bounds.size.width
+//
+//        self.resetButton.superview?.layer.cornerRadius = 0.5 * (self.resetButton.superview?.bounds.size.width)!
+//        self.resetButton.layer.cornerRadius = 0.5 * resetButton.bounds.size.width
+//
+//    }
     
     func createGridForScreenSize()
     {
@@ -114,8 +132,8 @@ class ViewController: UIViewController {
     {
         self.volumeSlider.minimumValue = 0
         self.volumeSlider.maximumValue = 100
-        self.volumeSlider.value = 50
-        let volumeValue = Int(self.volumeSlider.value)
+        self.volumeSlider.value = 100
+        let volumeValue = 100;
         self.volumeValueLabel.text = volumeValue.description
         
         self.tempoSlider.minimumValue = 60
@@ -183,7 +201,7 @@ class ViewController: UIViewController {
     {
         let newValue = Int(sender.value)
         self.volumeValueLabel.text = newValue.description
-        
+        self.audioManager.volume = Double(sender.value / 100)
         // need to add ability to change volume
     }
     

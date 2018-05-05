@@ -18,6 +18,7 @@ class SoundBank: NSObject
         case Marimba
         case Flute
         case Strings
+        case Vibes
     }
     
     static var currentInstrument = SoundBank.Instrument.Piano
@@ -44,7 +45,9 @@ class SoundBank: NSObject
     
     public static var cMinor = [72, 74, 75, 77, 79, 80, 82, 86]
     
-    public static var aFlatMinor = [72, 74, 75, 77, 79, 80, 82, 86]
+    public static var aFlatMinor = [66, 68, 71, 73, 75, 77, 78, 80]
+    
+    public static var dFlatMajor = [73,75,77, 78, 80, 82, 84, 85]
     
     //public static var cMajor16 = [48, 74, 76, 77, 79, 81, 83, 84, 72 + 16, 74 + 16, 76 + 16, 77 + 16, 79 + 16, 81 + 16, 83 + 16, 112]
     
@@ -60,12 +63,13 @@ class SoundBank: NSObject
     {
         SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Vibes")
+        currentInstrument = SoundBank.Instrument.Vibes
     }
 
     public static func loadPiano()
     {
         SoundBank.setUpSampler()
-        try! SoundBank.sampler.loadWav("FM Piano")
+        try! SoundBank.sampler.loadWav("Piano2")
         currentInstrument = SoundBank.Instrument.Piano
     }
     

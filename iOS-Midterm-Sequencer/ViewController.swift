@@ -14,9 +14,21 @@ class ViewController: UIViewController {
     let gridManager = GridManager()
     let audioManager = AudioManager()
     var mainStackView = UIStackView()
+    var isPlaying = false
+    var currentInstrument = "drums"
     
     @IBOutlet weak var topMenuView: UIView!
     @IBOutlet weak var bottomMenuView: UIView!
+    @IBOutlet weak var volumeSlider: UISlider!
+    @IBOutlet weak var tempoSlider: UISlider!
+    @IBOutlet weak var volumeValueLabel: UILabel!
+    @IBOutlet weak var tempoValueLabel: UILabel!
+    @IBOutlet weak var instrument01Button: UIButton!
+    @IBOutlet weak var instrument02Button: UIButton!
+    @IBOutlet weak var instrument03Button: UIButton!
+    @IBOutlet weak var instrument04Button: UIButton!
+    @IBOutlet weak var instrument05Button: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +51,9 @@ class ViewController: UIViewController {
         
         AudioKit.output = self.audioManager.metronome
         try! AudioKit.start()
-        audioManager.startSequencer()
+        
+        self.setupSliders()
+        
     }
     
     func createGridForScreenSize()
@@ -93,6 +107,22 @@ class ViewController: UIViewController {
         self.mainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
         self.alignMenus()
+        
+    }
+    
+    func setupSliders()
+    {
+        self.volumeSlider.minimumValue = 0
+        self.volumeSlider.maximumValue = 100
+        self.volumeSlider.value = 50
+        let volumeValue = Int(self.volumeSlider.value)
+        self.volumeValueLabel.text = volumeValue.description
+        
+        self.tempoSlider.minimumValue = 60
+        self.tempoSlider.maximumValue = 240
+        self.tempoSlider.value = Float(self.audioManager.tempo)
+        let tempoValue = Int(self.audioManager.tempo)
+        self.tempoValueLabel.text = tempoValue.description
     }
     
     func animateColumn(x: Int)
@@ -128,5 +158,66 @@ class ViewController: UIViewController {
         self.bottomMenuView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.bottomMenuView.topAnchor.constraint(equalTo: self.mainStackView.bottomAnchor, constant: 30).isActive = true
     }
+    
+    @IBAction func playButtonTapped(_ sender: UIButton)
+    {
+        if isPlaying
+        {
+            audioManager.stopSequencer()
+            isPlaying = false
+            self.playButton.setBackgroundImage(UIImage.init(named: "icon_play"), for: UIControlState.normal)
+        }else
+        {
+            audioManager.startSequencer()
+            isPlaying = true
+            self.playButton.setBackgroundImage(UIImage.init(named: "icon_pause"), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func resetButtonTapped(_ sender: UIButton)
+    {
+        self.gridManager.resetGrid()
+    }
+    
+    @IBAction func volumeSliderAdjusted(_ sender: UISlider)
+    {
+        let newValue = Int(sender.value)
+        self.volumeValueLabel.text = newValue.description
+        
+        // need to add ability to change volume
+    }
+    
+    @IBAction func tempoSliderAdjusted(_ sender: UISlider)
+    {
+        let newValue = Int(sender.value)
+        self.tempoValueLabel.text = newValue.description
+        self.audioManager.metronome.tempo = Double(sender.value)
+    }
+    
+    @IBAction func instrument01ButtonTapped(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func instrument02ButtonTapped(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func instrument03ButtonTapped(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func instrument04ButtonTapped(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func instrument05ButtonTapped(_ sender: UIButton)
+    {
+        
+    }
+    
 }
 

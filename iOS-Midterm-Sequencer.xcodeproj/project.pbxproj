@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27451256209D36DB004524F6 /* circle_md.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451252209D36DB004524F6 /* circle_md.png */; };
+		27451257209D36DB004524F6 /* icon_reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451253209D36DB004524F6 /* icon_reload.png */; };
+		27451258209D36DB004524F6 /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451254209D36DB004524F6 /* icon_play.png */; };
+		27451259209D36DB004524F6 /* icon_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451255209D36DB004524F6 /* icon_pause.png */; };
+		27451263209D3BE3004524F6 /* drum2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125A209D3BE1004524F6 /* drum2.png */; };
+		27451264209D3BE3004524F6 /* harp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125B209D3BE2004524F6 /* harp.png */; };
+		27451265209D3BE3004524F6 /* drum.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125C209D3BE2004524F6 /* drum.png */; };
+		27451266209D3BE3004524F6 /* piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125D209D3BE2004524F6 /* piano.png */; };
+		27451267209D3BE3004524F6 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125E209D3BE2004524F6 /* bell.png */; };
+		27451268209D3BE3004524F6 /* violin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125F209D3BE2004524F6 /* violin.png */; };
+		27451269209D3BE3004524F6 /* flute.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451260209D3BE2004524F6 /* flute.png */; };
+		2745126A209D3BE3004524F6 /* guitar.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451261209D3BE3004524F6 /* guitar.png */; };
+		2745126B209D3BE3004524F6 /* trumpet.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451262209D3BE3004524F6 /* trumpet.png */; };
 		464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
 		CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
 		CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
@@ -28,6 +41,19 @@
 
 /* Begin PBXFileReference section */
 		211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Midterm_Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27451252209D36DB004524F6 /* circle_md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_md.png; sourceTree = "<group>"; };
+		27451253209D36DB004524F6 /* icon_reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_reload.png; sourceTree = "<group>"; };
+		27451254209D36DB004524F6 /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
+		27451255209D36DB004524F6 /* icon_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pause.png; sourceTree = "<group>"; };
+		2745125A209D3BE1004524F6 /* drum2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum2.png; sourceTree = "<group>"; };
+		2745125B209D3BE2004524F6 /* harp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harp.png; sourceTree = "<group>"; };
+		2745125C209D3BE2004524F6 /* drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum.png; sourceTree = "<group>"; };
+		2745125D209D3BE2004524F6 /* piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano.png; sourceTree = "<group>"; };
+		2745125E209D3BE2004524F6 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		2745125F209D3BE2004524F6 /* violin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violin.png; sourceTree = "<group>"; };
+		27451260209D3BE2004524F6 /* flute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flute.png; sourceTree = "<group>"; };
+		27451261209D3BE3004524F6 /* guitar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar.png; sourceTree = "<group>"; };
+		27451262209D3BE3004524F6 /* trumpet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trumpet.png; sourceTree = "<group>"; };
 		B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
 		CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +88,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2745126C209D3BEA004524F6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CAC5408F209CD6E4003A285E /* guitar.wav */,
+				CAC54090209CD6E4003A285E /* strings.wav */,
+				CAC5408B209CBEE6003A285E /* Hat.wav */,
+				CAC54089209CBEE6003A285E /* Kick.wav */,
+				CAC5408A209CBEE6003A285E /* Snare.wav */,
+				CAC54086209CBD1C003A285E /* Marimba.wav */,
+				CAC54084209CA9C0003A285E /* FM Piano.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2745126D209D3BF3004524F6 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				27451252209D36DB004524F6 /* circle_md.png */,
+				27451255209D36DB004524F6 /* icon_pause.png */,
+				27451254209D36DB004524F6 /* icon_play.png */,
+				27451253209D36DB004524F6 /* icon_reload.png */,
+				2745125E209D3BE2004524F6 /* bell.png */,
+				2745125C209D3BE2004524F6 /* drum.png */,
+				2745125A209D3BE1004524F6 /* drum2.png */,
+				27451260209D3BE2004524F6 /* flute.png */,
+				27451261209D3BE3004524F6 /* guitar.png */,
+				2745125B209D3BE2004524F6 /* harp.png */,
+				2745125D209D3BE2004524F6 /* piano.png */,
+				27451262209D3BE3004524F6 /* trumpet.png */,
+				2745125F209D3BE2004524F6 /* violin.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		CAC5405A209B9CD2003A285E = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +161,8 @@
 		CAC54088209CBDC8003A285E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CAC5408F209CD6E4003A285E /* guitar.wav */,
-				CAC54090209CD6E4003A285E /* strings.wav */,
-				CAC5408B209CBEE6003A285E /* Hat.wav */,
-				CAC54089209CBEE6003A285E /* Kick.wav */,
-				CAC5408A209CBEE6003A285E /* Snare.wav */,
-				CAC54086209CBD1C003A285E /* Marimba.wav */,
-				CAC54084209CA9C0003A285E /* FM Piano.wav */,
+				2745126D209D3BF3004524F6 /* Icons */,
+				2745126C209D3BEA004524F6 /* Sounds */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,9 +244,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC5408E209CBEE6003A285E /* Hat.wav in Resources */,
+				27451259209D36DB004524F6 /* icon_pause.png in Resources */,
+				2745126B209D3BE3004524F6 /* trumpet.png in Resources */,
+				27451268209D3BE3004524F6 /* violin.png in Resources */,
+				27451257209D36DB004524F6 /* icon_reload.png in Resources */,
 				CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
+				2745126A209D3BE3004524F6 /* guitar.png in Resources */,
 				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
+				27451266209D3BE3004524F6 /* piano.png in Resources */,
+				27451256209D36DB004524F6 /* circle_md.png in Resources */,
+				27451264209D3BE3004524F6 /* harp.png in Resources */,
+				27451265209D3BE3004524F6 /* drum.png in Resources */,
+				27451258209D36DB004524F6 /* icon_play.png in Resources */,
+				27451263209D3BE3004524F6 /* drum2.png in Resources */,
+				27451269209D3BE3004524F6 /* flute.png in Resources */,
 				CAC54092209CD6E5003A285E /* strings.wav in Resources */,
+				27451267209D3BE3004524F6 /* bell.png in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
 				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
 				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,

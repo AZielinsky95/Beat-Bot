@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  iOS-Midterm-Sequencer
+//  iOS-Midterm-Sequencer (Sequencer++)
 //
-//  Created by Alejandro Zielinsky on 2018-05-03.
-//  Copyright © 2018 Alejandro Zielinsky. All rights reserved.
+//  Created by Alejandro Zielinsky & Mike Stoltman on 2018-05-03.
+//  Copyright © 2018 Alejandro Zielinsky & Mike Stoltman. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let audioManager = AudioManager()
     var mainStackView = UIStackView()
     var isPlaying = false
-    var currentInstrument = "drums"
+//    var currentInstrument = "drums"
     
     @IBOutlet weak var topMenuView: UIView!
     @IBOutlet weak var bottomMenuView: UIView!

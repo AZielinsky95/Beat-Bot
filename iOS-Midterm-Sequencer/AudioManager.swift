@@ -19,11 +19,11 @@ class AudioManager: NSObject
     {
         get
         {
-            return SoundBank.mix.volume
+            return SoundBank.volume
         }
         set
         {
-            SoundBank.mix.volume = newValue
+            SoundBank.volume = newValue
         }
     }
     

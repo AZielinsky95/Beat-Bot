@@ -12,7 +12,20 @@ import AudioKit
 class SoundBank: NSObject
 {
     private static let pulse = 0.23
-    public static var mix = AKMixer();
+    
+    private static var mix = AKMixer();
+    
+    static var volume : Double
+    {
+        get
+        {
+            return mix.volume
+        }
+        set
+        {
+            mix.volume = newValue
+        }
+    }
     
     private static let sampler = AKAppleSampler()
     
@@ -56,10 +69,10 @@ class SoundBank: NSObject
         try! SoundBank.sampler.loadWav("guitar")
     }
     
-    public static func loadStrings()
+    public static func loadFlute()
     {
         SoundBank.setUpSampler()
-        try! SoundBank.sampler.loadWav("strings")
+        try! SoundBank.sampler.loadWav("Flute")
     }
     
     public static func playKick()

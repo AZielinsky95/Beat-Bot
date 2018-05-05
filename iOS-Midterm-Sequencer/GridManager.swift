@@ -15,6 +15,22 @@ class GridManager: NSObject
     let gridY : Int = 8
 
     
+    func updateGridCellColor(color:UIColor)
+    {
+        GridCell.activeColor = color
+        
+        for row in self.grid
+        {
+            for cell in row
+            {
+                if(cell.isActive)
+                {
+                    cell.updateColor(color: color)
+                }
+            }
+        }
+    }
+    
     func createGrid(width:Int,height:Int)
     {
         let frame = CGRect(x: 0, y: 0, width: 40, height: 40)

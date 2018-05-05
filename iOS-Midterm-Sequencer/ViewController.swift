@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
+    var menuButtons = [UIButton]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -54,25 +56,9 @@ class ViewController: UIViewController {
         try! AudioKit.start()
         
         self.setupSliders()
+        
+        self.menuButtons.append(contentsOf: [instrument01Button,instrument02Button,instrument03Button,instrument04Button,instrument05Button,playButton,resetButton]);
     }
-    
-//    override func viewDidLayoutSubviews()
-//    {
-//        self.makeButtonsCircular()
-//    }
-//
-//    func makeButtonsCircular()
-//    {
-//      //  let position = self.playButton.superview!.center
-//       // self.playButton.superview!.frame = CGRect(x: position.x, y: position.y, width: 100, height: 100)
-//       // self.playButton.frame = CGRect(x:  self.playButton.center.x, y: self.playButton.center.y, width: 50, height: 50)
-//        self.playButton.superview?.layer.cornerRadius = 0.5 * (self.playButton.superview?.bounds.size.width)!
-//        self.playButton.layer.cornerRadius = 0.5 * playButton.bounds.size.width
-//
-//        self.resetButton.superview?.layer.cornerRadius = 0.5 * (self.resetButton.superview?.bounds.size.width)!
-//        self.resetButton.layer.cornerRadius = 0.5 * resetButton.bounds.size.width
-//
-//    }
     
     func createGridForScreenSize()
     {
@@ -192,6 +178,17 @@ class ViewController: UIViewController {
         }
     }
     
+    func updateMenuColors()
+    {
+        for button in self.menuButtons
+        {
+            button.superview?.backgroundColor = GridCell.activeColor
+        }
+        
+        volumeSlider.tintColor = GridCell.activeColor
+        tempoSlider.tintColor = GridCell.activeColor
+    }
+    
     @IBAction func resetButtonTapped(_ sender: UIButton)
     {
         self.gridManager.resetGrid()
@@ -202,6 +199,7 @@ class ViewController: UIViewController {
         let newValue = Int(sender.value)
         self.volumeValueLabel.text = newValue.description
         self.audioManager.volume = Double(sender.value / 100)
+        print("AudioManager Volume: \(self.audioManager.volume)")
         // need to add ability to change volume
     }
     
@@ -214,28 +212,55 @@ class ViewController: UIViewController {
     
     @IBAction func instrument01ButtonTapped(_ sender: UIButton)
     {
-        
+        self.gridManager.updateGridCellColor(color: UIColor.cyan)
+        updateMenuColors()
+        SoundBank.loadMarimba()
     }
     
     @IBAction func instrument02ButtonTapped(_ sender: UIButton)
     {
-        
+        self.gridManager.updateGridCellColor(color: UIColor.magenta)
+        updateMenuColors()
+        SoundBank.loadGuitar()
     }
     
     @IBAction func instrument03ButtonTapped(_ sender: UIButton)
     {
-        
+        self.gridManager.updateGridCellColor(color: UIColor.green)
+        updateMenuColors()
+        SoundBank.loadPiano()
     }
     
     @IBAction func instrument04ButtonTapped(_ sender: UIButton)
     {
-        
+        self.gridManager.updateGridCellColor(color: UIColor.orange)
+        updateMenuColors()
+        SoundBank.loadFlute()
     }
     
     @IBAction func instrument05ButtonTapped(_ sender: UIButton)
     {
         
     }
+    
+    //    override func viewDidLayoutSubviews()
+    //    {
+    //        self.makeButtonsCircular()
+    //    }
+    //
+    //    func makeButtonsCircular()
+    //    {
+    //      //  let position = self.playButton.superview!.center
+    //       // self.playButton.superview!.frame = CGRect(x: position.x, y: position.y, width: 100, height: 100)
+    //       // self.playButton.frame = CGRect(x:  self.playButton.center.x, y: self.playButton.center.y, width: 50, height: 50)
+    //        self.playButton.superview?.layer.cornerRadius = 0.5 * (self.playButton.superview?.bounds.size.width)!
+    //        self.playButton.layer.cornerRadius = 0.5 * playButton.bounds.size.width
+    //
+    //        self.resetButton.superview?.layer.cornerRadius = 0.5 * (self.resetButton.superview?.bounds.size.width)!
+    //        self.resetButton.layer.cornerRadius = 0.5 * resetButton.bounds.size.width
+    //
+    //    }
+    
     
 }
 

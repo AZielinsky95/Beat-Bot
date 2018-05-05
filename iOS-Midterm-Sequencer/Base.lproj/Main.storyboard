@@ -306,6 +306,7 @@
                         <outlet property="instrument04Button" destination="jNu-w8-yzv" id="jFQ-bE-cob"/>
                         <outlet property="instrument05Button" destination="EX5-xu-lG2" id="Thn-ZF-YRJ"/>
                         <outlet property="playButton" destination="0kE-pH-rnC" id="T5f-j1-jHm"/>
+                        <outlet property="resetButton" destination="SCM-lK-9hH" id="Wbf-ZL-aZx"/>
                         <outlet property="tempoSlider" destination="1EU-iD-GjU" id="20k-Ia-6HH"/>
                         <outlet property="tempoValueLabel" destination="Cp3-zh-xKQ" id="FUK-Wf-Mgs"/>
                         <outlet property="topMenuView" destination="Y6Q-vP-e72" id="LJf-d0-ahu"/>

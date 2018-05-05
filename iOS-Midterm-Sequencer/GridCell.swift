@@ -11,9 +11,10 @@ import UIKit
 class GridCell: UIButton
 {
     var isActive : Bool = false
-    let activeColor : UIColor = UIColor.cyan;
+    static var activeColor: UIColor = UIColor.cyan;
+    static let inActiveColor : UIColor = UIColor.gray;
+    
     var gridNote : Int = 0;
-    public static let inActiveColor : UIColor = UIColor.gray;
     
     init(frame: CGRect,note:Int)
     {
@@ -24,6 +25,11 @@ class GridCell: UIButton
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("don't call this.")
+    }
+    
+    func updateColor(color:UIColor)
+    {
+        self.backgroundColor =  GridCell.activeColor
     }
     
     func playNote()
@@ -50,7 +56,7 @@ class GridCell: UIButton
         }
         else
         {
-            self.backgroundColor = activeColor;
+            self.backgroundColor =  GridCell.activeColor;
             self.isActive = true;
         }
     }

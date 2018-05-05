@@ -283,11 +283,11 @@ class ViewController: UIViewController {
     
     @IBAction func instrument02ButtonTapped(_ sender: UIButton)
     {
-        if(SoundBank.currentInstrument != SoundBank.Instrument.Guitar)
+        if(SoundBank.currentInstrument != SoundBank.Instrument.Vibes)
         {
         self.gridManager.updateGridCellColor(color: UIColor.yellow)
         updateMenuColors()
-        SoundBank.loadGuitar()
+        SoundBank.loadVibes()
         }
     }
     

@@ -34,12 +34,12 @@ class GridManager: NSObject
     func createGrid(width:Int,height:Int)
     {
         let frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        SoundBank.cMinor.reverse()
-        SoundBank.cMinor = SoundBank.shiftOctave(octave: -1, scale: SoundBank.cMinor)
+        SoundBank.dFlatMajor.reverse()
+        SoundBank.dFlatMajor = SoundBank.shiftOctave(octave: -1, scale: SoundBank.dFlatMajor)
         for y in 0..<gridY {
             grid.append(Array())
             for x in 0..<gridX {
-                self.grid[y].append(GridCell(frame: frame,note: SoundBank.cMinor[y]))
+                self.grid[y].append(GridCell(frame: frame,note: SoundBank.dFlatMajor[y]))
                 self.grid[y][x].backgroundColor = GridCell.inActiveColor
             }
         }

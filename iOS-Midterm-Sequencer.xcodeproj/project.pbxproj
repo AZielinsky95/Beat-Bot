@@ -46,6 +46,8 @@
 		CAC5409B209E36FA003A285E /* Clav.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54099209E36F9003A285E /* Clav.wav */; };
 		CAC5409E209E3897003A285E /* Guitar2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409D209E3897003A285E /* Guitar2.wav */; };
 		CAC540A0209E389E003A285E /* Strings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409F209E389E003A285E /* Strings.wav */; };
+		CAC540A2209E4FEF003A285E /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A1209E4FEF003A285E /* Piano.wav */; };
+		CAC540A4209E50BC003A285E /* Piano2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A3209E50BC003A285E /* Piano2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,8 @@
 		CAC54099209E36F9003A285E /* Clav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clav.wav; sourceTree = "<group>"; };
 		CAC5409D209E3897003A285E /* Guitar2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Guitar2.wav; sourceTree = "<group>"; };
 		CAC5409F209E389E003A285E /* Strings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Strings.wav; sourceTree = "<group>"; };
+		CAC540A1209E4FEF003A285E /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
+		CAC540A3209E50BC003A285E /* Piano2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano2.wav; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,8 @@
 		2745126C209D3BEA004524F6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				CAC540A3209E50BC003A285E /* Piano2.wav */,
+				CAC540A1209E4FEF003A285E /* Piano.wav */,
 				CAC54099209E36F9003A285E /* Clav.wav */,
 				CAC5409D209E3897003A285E /* Guitar2.wav */,
 				CAC5409F209E389E003A285E /* Strings.wav */,
@@ -294,7 +300,9 @@
 				27451267209D3BE3004524F6 /* bell.png in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
 				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
+				CAC540A2209E4FEF003A285E /* Piano.wav in Resources */,
 				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
+				CAC540A4209E50BC003A285E /* Piano2.wav in Resources */,
 				CAC54091209CD6E5003A285E /* guitar.wav in Resources */,
 				278E92E0209E6CE300A0C390 /* flute.png in Resources */,
 				CAC5409E209E3897003A285E /* Guitar2.wav in Resources */,

@@ -99,6 +99,13 @@ class ViewController: UIViewController {
                 rowStackView.addArrangedSubview(gridManager.grid[y][x])
                 gridManager.grid[y][x].widthAnchor.constraint(equalToConstant: CGFloat(width)).isActive = true
                 gridManager.grid[y][x].heightAnchor.constraint(equalToConstant: CGFloat(height)).isActive = true
+                
+                // rounding the corners a little bit
+                gridManager.grid[y][x].layer.cornerRadius = 5
+                
+                // code to make them circles (if we want to switch)
+//                gridManager.grid[y][x].layer.cornerRadius = (gridManager.grid[y][x].layer.frame.width/2)
+                
             }
             // add row to main stackview
             self.mainStackView.addArrangedSubview(rowStackView)
@@ -161,6 +168,60 @@ class ViewController: UIViewController {
         self.bottomMenuView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
         self.bottomMenuView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.bottomMenuView.topAnchor.constraint(equalTo: self.mainStackView.bottomAnchor, constant: 30).isActive = true
+        
+        self.roundCorners()
+        self.resizeIcons()
+    }
+    
+    func roundCorners()
+    {
+        self.playButton.layer.cornerRadius = self.playButton.layer.frame.width/2
+        self.playButton.superview!.layer.cornerRadius = self.playButton.superview!.layer.frame.width/2
+        self.playButton.clipsToBounds = true
+        self.playButton.superview!.clipsToBounds = true
+        self.resetButton.layer.cornerRadius = self.playButton.layer.frame.width/2
+        self.resetButton.superview!.layer.cornerRadius = self.playButton.superview!.layer.frame.width/2
+        self.resetButton.clipsToBounds = true
+        self.resetButton.superview!.clipsToBounds = true
+        self.instrument01Button.layer.cornerRadius = 10
+        self.instrument01Button.superview!.layer.cornerRadius = 10
+        self.instrument02Button.layer.cornerRadius = 10
+        self.instrument02Button.superview!.layer.cornerRadius = 10
+        self.instrument03Button.layer.cornerRadius = 10
+        self.instrument03Button.superview!.layer.cornerRadius = 10
+        self.instrument04Button.layer.cornerRadius = 10
+        self.instrument04Button.superview!.layer.cornerRadius = 10
+        self.instrument05Button.layer.cornerRadius = 10
+        self.instrument05Button.superview!.layer.cornerRadius = 10
+
+    }
+    
+    func resizeIcons()
+    {
+        self.instrument01Button.imageEdgeInsets.top = 15
+        self.instrument01Button.imageEdgeInsets.bottom = 15
+        self.instrument01Button.imageEdgeInsets.left = 15
+        self.instrument01Button.imageEdgeInsets.right = 15
+        
+        self.instrument02Button.imageEdgeInsets.top = 15
+        self.instrument02Button.imageEdgeInsets.bottom = 15
+        self.instrument02Button.imageEdgeInsets.left = 15
+        self.instrument02Button.imageEdgeInsets.right = 15
+        
+        self.instrument03Button.imageEdgeInsets.top = 15
+        self.instrument03Button.imageEdgeInsets.bottom = 15
+        self.instrument03Button.imageEdgeInsets.left = 15
+        self.instrument03Button.imageEdgeInsets.right = 15
+        
+        self.instrument04Button.imageEdgeInsets.top = 15
+        self.instrument04Button.imageEdgeInsets.bottom = 15
+        self.instrument04Button.imageEdgeInsets.left = 15
+        self.instrument04Button.imageEdgeInsets.right = 15
+        
+        self.instrument05Button.imageEdgeInsets.top = 15
+        self.instrument05Button.imageEdgeInsets.bottom = 15
+        self.instrument05Button.imageEdgeInsets.left = 15
+        self.instrument05Button.imageEdgeInsets.right = 15
     }
     
     @IBAction func playButtonTapped(_ sender: UIButton)
@@ -234,7 +295,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Strings)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.white)
+        self.gridManager.updateGridCellColor(color: UIColor.green)
         updateMenuColors()
         SoundBank.loadStrings()
         }

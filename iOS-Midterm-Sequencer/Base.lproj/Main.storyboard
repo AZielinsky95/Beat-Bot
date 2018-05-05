@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +39,6 @@
                                         <constraints>
                                             <constraint firstItem="SCM-lK-9hH" firstAttribute="leading" secondItem="Q8t-dC-oFZ" secondAttribute="leading" constant="3" id="00w-pe-4bg"/>
                                             <constraint firstAttribute="trailing" secondItem="SCM-lK-9hH" secondAttribute="trailing" constant="3" id="GBo-6v-9kx"/>
-                                            <constraint firstAttribute="width" secondItem="Q8t-dC-oFZ" secondAttribute="height" multiplier="67:64" id="Uad-oV-FmG"/>
                                             <constraint firstItem="SCM-lK-9hH" firstAttribute="top" secondItem="Q8t-dC-oFZ" secondAttribute="top" constant="3" id="YFK-yV-tAY"/>
                                             <constraint firstAttribute="bottom" secondItem="SCM-lK-9hH" secondAttribute="bottom" constant="3" id="gG7-Zk-yDy"/>
                                         </constraints>
@@ -64,7 +62,7 @@
                                             <constraint firstAttribute="trailing" secondItem="0kE-pH-rnC" secondAttribute="trailing" constant="3" id="3LH-nT-u2Z"/>
                                             <constraint firstItem="0kE-pH-rnC" firstAttribute="top" secondItem="dqb-lq-Cab" secondAttribute="top" constant="3" id="ArW-kr-pc3"/>
                                             <constraint firstItem="0kE-pH-rnC" firstAttribute="leading" secondItem="dqb-lq-Cab" secondAttribute="leading" constant="3" id="Moe-jy-Nte"/>
-                                            <constraint firstAttribute="width" secondItem="dqb-lq-Cab" secondAttribute="height" multiplier="6:5" id="zm2-20-OBA"/>
+                                            <constraint firstAttribute="width" secondItem="dqb-lq-Cab" secondAttribute="height" multiplier="1:1" id="zm2-20-OBA"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g46-8N-E12" userLabel="Sliders">
@@ -159,11 +157,12 @@
                                     <constraint firstItem="dqb-lq-Cab" firstAttribute="leading" secondItem="Q8t-dC-oFZ" secondAttribute="trailing" constant="20" id="2MF-94-Rft"/>
                                     <constraint firstAttribute="bottom" secondItem="g46-8N-E12" secondAttribute="bottom" constant="10" id="5XR-50-lPk"/>
                                     <constraint firstItem="Q8t-dC-oFZ" firstAttribute="centerY" secondItem="dqb-lq-Cab" secondAttribute="centerY" id="Jt7-TX-MZ7"/>
+                                    <constraint firstItem="Q8t-dC-oFZ" firstAttribute="width" secondItem="dqb-lq-Cab" secondAttribute="width" id="Y1s-K3-gbo"/>
                                     <constraint firstItem="g46-8N-E12" firstAttribute="top" secondItem="Y6Q-vP-e72" secondAttribute="top" constant="20" id="c5l-Db-2t2"/>
                                     <constraint firstItem="dqb-lq-Cab" firstAttribute="centerY" secondItem="g46-8N-E12" secondAttribute="centerY" id="lOF-vR-ANa"/>
                                     <constraint firstItem="Q8t-dC-oFZ" firstAttribute="leading" secondItem="Y6Q-vP-e72" secondAttribute="leading" constant="48" id="lvY-g6-xOs"/>
                                     <constraint firstItem="g46-8N-E12" firstAttribute="leading" secondItem="dqb-lq-Cab" secondAttribute="trailing" constant="33" id="ntr-D1-xGg"/>
-                                    <constraint firstItem="Q8t-dC-oFZ" firstAttribute="height" secondItem="dqb-lq-Cab" secondAttribute="height" multiplier="0.5" id="nwE-66-0WY"/>
+                                    <constraint firstItem="Q8t-dC-oFZ" firstAttribute="height" secondItem="dqb-lq-Cab" secondAttribute="height" id="nwE-66-0WY"/>
                                     <constraint firstAttribute="trailing" secondItem="g46-8N-E12" secondAttribute="trailing" constant="10" id="tfO-wz-EGH"/>
                                 </constraints>
                             </view>
@@ -171,15 +170,15 @@
                                 <rect key="frame" x="0.0" y="527" width="375" height="140"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vth-2U-2mU" userLabel="Instruments">
-                                        <rect key="frame" x="17.5" y="10" width="562" height="132.5"/>
+                                        <rect key="frame" x="17.5" y="10" width="1342" height="327.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-7m-lrP" userLabel="Instrument 01">
-                                                <rect key="frame" x="0.0" y="0.0" width="106" height="132.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="262" height="327.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv2-u7-IWA" userLabel="Instrument 01 Button">
-                                                        <rect key="frame" x="-14" y="0.0" width="64" height="64"/>
+                                                        <rect key="frame" x="8" y="29" width="64" height="64"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="drum2.png"/>
+                                                        <state key="normal" image="piano.png"/>
                                                         <connections>
                                                             <action selector="instrument01ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="m6d-wl-wJn"/>
                                                         </connections>
@@ -195,12 +194,12 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-k9-FJA" userLabel="Instrument 02">
-                                                <rect key="frame" x="114" y="0.0" width="106" height="132.5"/>
+                                                <rect key="frame" x="270" y="0.0" width="262" height="327.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hc-7w-F7I" userLabel="Instrument 02 Button">
-                                                        <rect key="frame" x="-2" y="13" width="64" height="64"/>
+                                                        <rect key="frame" x="21" y="25" width="64" height="64"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="piano.png"/>
+                                                        <state key="normal" image="guitar.png"/>
                                                         <connections>
                                                             <action selector="instrument02ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="JKE-iZ-cfk"/>
                                                         </connections>
@@ -215,12 +214,12 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFO-qx-QkJ" userLabel="Instrument 03">
-                                                <rect key="frame" x="228" y="0.0" width="106" height="132.5"/>
+                                                <rect key="frame" x="540" y="0.0" width="262" height="327.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVf-PK-wIT" userLabel="Instrument 03 Button">
-                                                        <rect key="frame" x="-2" y="13" width="64" height="64"/>
+                                                        <rect key="frame" x="-75" y="-62" width="256" height="256"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="trumpet.png"/>
+                                                        <state key="normal" image="strings.png"/>
                                                         <connections>
                                                             <action selector="instrument03ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="kOV-12-jfB"/>
                                                         </connections>
@@ -235,7 +234,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fsb-2F-dzJ" userLabel="Instrument 04">
-                                                <rect key="frame" x="342" y="0.0" width="106" height="132.5"/>
+                                                <rect key="frame" x="810" y="0.0" width="262" height="327.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-w8-yzv" userLabel="Instrument 04 Button">
                                                         <rect key="frame" x="-2" y="13" width="64" height="64"/>
@@ -255,12 +254,12 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28u-yO-dXH" userLabel="Instrument 05">
-                                                <rect key="frame" x="456" y="0.0" width="106" height="132.5"/>
+                                                <rect key="frame" x="1080" y="0.0" width="262" height="327.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EX5-xu-lG2" userLabel="Instrument 05 Button">
-                                                        <rect key="frame" x="-2" y="13" width="64" height="64"/>
+                                                        <rect key="frame" x="-98" y="-83" width="256" height="256"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="guitar.png"/>
+                                                        <state key="normal" image="marimba.png"/>
                                                         <connections>
                                                             <action selector="instrument05ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="fqP-G0-mYk"/>
                                                         </connections>
@@ -320,12 +319,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drum2.png" width="64" height="64"/>
         <image name="flute.png" width="64" height="64"/>
         <image name="guitar.png" width="64" height="64"/>
         <image name="icon_play.png" width="256" height="256"/>
         <image name="icon_reload.png" width="256" height="256"/>
+        <image name="marimba.png" width="256" height="256"/>
         <image name="piano.png" width="64" height="64"/>
-        <image name="trumpet.png" width="64" height="64"/>
+        <image name="strings.png" width="256" height="256"/>
     </resources>
 </document>

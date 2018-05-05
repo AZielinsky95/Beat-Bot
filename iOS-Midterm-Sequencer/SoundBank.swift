@@ -11,6 +11,17 @@ import AudioKit
 
 class SoundBank: NSObject
 {
+    enum Instrument
+    {
+        case Piano
+        case Guitar
+        case Marimba
+        case Flute
+        case Strings
+    }
+    
+    static var currentInstrument = SoundBank.Instrument.Piano
+    
     private static let pulse = 0.23
     
     private static var mix = AKMixer();
@@ -55,29 +66,41 @@ class SoundBank: NSObject
     {
         SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("FM Piano")
+        currentInstrument = SoundBank.Instrument.Piano
     }
     
     public static func loadMarimba()
     {
         SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Marimba")
+        currentInstrument = SoundBank.Instrument.Marimba
     }
     
     public static func loadGuitar()
     {
         SoundBank.setUpSampler()
-        try! SoundBank.sampler.loadWav("guitar")
+        try! SoundBank.sampler.loadWav("Guitar2")
+        currentInstrument = SoundBank.Instrument.Guitar
     }
     
     public static func loadFlute()
     {
         SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Flute")
+         currentInstrument = SoundBank.Instrument.Flute
     }
     
-    public static func playKick()
+    public static func loadClav()
     {
-        
+        SoundBank.setUpSampler()
+        try! SoundBank.sampler.loadWav("Clav")
+    }
+    
+    public static func loadStrings()
+    {
+        SoundBank.setUpSampler()
+        try! SoundBank.sampler.loadWav("Strings")
+        currentInstrument = SoundBank.Instrument.Strings
     }
     
     private static func setUpSampler()

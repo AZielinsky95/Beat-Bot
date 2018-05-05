@@ -212,35 +212,52 @@ class ViewController: UIViewController {
     
     @IBAction func instrument01ButtonTapped(_ sender: UIButton)
     {
+        if(SoundBank.currentInstrument != SoundBank.Instrument.Piano)
+        {
         self.gridManager.updateGridCellColor(color: UIColor.cyan)
         updateMenuColors()
-        SoundBank.loadMarimba()
+        SoundBank.loadPiano()
+        }
     }
     
     @IBAction func instrument02ButtonTapped(_ sender: UIButton)
     {
-        self.gridManager.updateGridCellColor(color: UIColor.magenta)
+        if(SoundBank.currentInstrument != SoundBank.Instrument.Guitar)
+        {
+        self.gridManager.updateGridCellColor(color: UIColor.yellow)
         updateMenuColors()
         SoundBank.loadGuitar()
+        }
     }
     
     @IBAction func instrument03ButtonTapped(_ sender: UIButton)
     {
-        self.gridManager.updateGridCellColor(color: UIColor.green)
+        if(SoundBank.currentInstrument != SoundBank.Instrument.Strings)
+        {
+        self.gridManager.updateGridCellColor(color: UIColor.white)
         updateMenuColors()
-        SoundBank.loadPiano()
+        SoundBank.loadStrings()
+        }
     }
     
     @IBAction func instrument04ButtonTapped(_ sender: UIButton)
     {
+        if(SoundBank.currentInstrument != SoundBank.Instrument.Flute)
+        {
         self.gridManager.updateGridCellColor(color: UIColor.orange)
         updateMenuColors()
         SoundBank.loadFlute()
+        }
     }
     
     @IBAction func instrument05ButtonTapped(_ sender: UIButton)
     {
-        
+        if(SoundBank.currentInstrument != SoundBank.Instrument.Marimba)
+        {
+        self.gridManager.updateGridCellColor(color: UIColor.magenta)
+        updateMenuColors()
+        SoundBank.loadMarimba()
+        }
     }
     
     //    override func viewDidLayoutSubviews()

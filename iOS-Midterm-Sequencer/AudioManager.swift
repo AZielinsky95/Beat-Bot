@@ -32,7 +32,7 @@ class AudioManager: NSObject
         self.metronome.frequency1 = 0;
         self.metronome.frequency2 = 0;
         self.metronome.tempo = tempo;
-        SoundBank.loadMarimba()
+        SoundBank.loadPiano()
     }
     
     func setTempo(tempo:Double)

@@ -24,6 +24,8 @@
 		278E92DC209E6B9D00A0C390 /* strings.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D7209E6B9D00A0C390 /* strings.png */; };
 		464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
 		CA9B7121209F52C30028D26F /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA9B7120209F52C20028D26F /* guitar.wav */; };
+		CA9B7127209F79330028D26F /* NewPiano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA9B7126209F79330028D26F /* NewPiano.wav */; };
+		CA9B712B209F7B1A0028D26F /* NewStrings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA9B712A209F7B1A0028D26F /* NewStrings.wav */; };
 		CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
 		CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
 		CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406A209B9CD2003A285E /* Main.storyboard */; };
@@ -43,7 +45,6 @@
 		CAC5409B209E36FA003A285E /* Clav.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54099209E36F9003A285E /* Clav.wav */; };
 		CAC5409E209E3897003A285E /* Guitar2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409D209E3897003A285E /* Guitar2.wav */; };
 		CAC540A0209E389E003A285E /* Strings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409F209E389E003A285E /* Strings.wav */; };
-		CAC540A2209E4FEF003A285E /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A1209E4FEF003A285E /* Piano.wav */; };
 		CAC540A4209E50BC003A285E /* Piano2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A3209E50BC003A285E /* Piano2.wav */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		278E92D7209E6B9D00A0C390 /* strings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strings.png; sourceTree = "<group>"; };
 		B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
 		CA9B7120209F52C20028D26F /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		CA9B7126209F79330028D26F /* NewPiano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = NewPiano.wav; sourceTree = "<group>"; };
+		CA9B712A209F7B1A0028D26F /* NewStrings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = NewStrings.wav; sourceTree = "<group>"; };
 		CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC54068209B9CD2003A285E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		CAC54099209E36F9003A285E /* Clav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clav.wav; sourceTree = "<group>"; };
 		CAC5409D209E3897003A285E /* Guitar2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Guitar2.wav; sourceTree = "<group>"; };
 		CAC5409F209E389E003A285E /* Strings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Strings.wav; sourceTree = "<group>"; };
-		CAC540A1209E4FEF003A285E /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
 		CAC540A3209E50BC003A285E /* Piano2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano2.wav; sourceTree = "<group>"; };
 		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,10 +111,11 @@
 			children = (
 				CA9B7120209F52C20028D26F /* guitar.wav */,
 				CAC540A3209E50BC003A285E /* Piano2.wav */,
-				CAC540A1209E4FEF003A285E /* Piano.wav */,
 				CAC54099209E36F9003A285E /* Clav.wav */,
+				CA9B7126209F79330028D26F /* NewPiano.wav */,
 				CAC5409D209E3897003A285E /* Guitar2.wav */,
 				CAC5409F209E389E003A285E /* Strings.wav */,
+				CA9B712A209F7B1A0028D26F /* NewStrings.wav */,
 				CAC54097209E2B18003A285E /* Flute.wav */,
 				CAC54095209D73A2003A285E /* Vibes.wav */,
 				CAC5408B209CBEE6003A285E /* Hat.wav */,
@@ -276,7 +279,9 @@
 				27451257209D36DB004524F6 /* icon_reload.png in Resources */,
 				278E92DC209E6B9D00A0C390 /* strings.png in Resources */,
 				CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
+				CA9B7127209F79330028D26F /* NewPiano.wav in Resources */,
 				2745126A209D3BE3004524F6 /* guitar.png in Resources */,
+				CA9B712B209F7B1A0028D26F /* NewStrings.wav in Resources */,
 				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
 				27451266209D3BE3004524F6 /* piano.png in Resources */,
 				27451256209D36DB004524F6 /* circle_md.png in Resources */,
@@ -289,7 +294,6 @@
 				27451267209D3BE3004524F6 /* bell.png in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
 				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
-				CAC540A2209E4FEF003A285E /* Piano.wav in Resources */,
 				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
 				CAC540A4209E50BC003A285E /* Piano2.wav in Resources */,
 				CA9B7121209F52C30028D26F /* guitar.wav in Resources */,

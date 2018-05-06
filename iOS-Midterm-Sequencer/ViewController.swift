@@ -260,8 +260,6 @@ class ViewController: UIViewController {
         let newValue = Int(sender.value)
         self.volumeValueLabel.text = newValue.description
         self.audioManager.volume = Double(sender.value / 100)
-        print("AudioManager Volume: \(self.audioManager.volume)")
-        // need to add ability to change volume
     }
     
     @IBAction func tempoSliderAdjusted(_ sender: UISlider)

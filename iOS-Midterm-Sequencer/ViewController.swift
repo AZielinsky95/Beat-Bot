@@ -175,14 +175,10 @@ class ViewController: UIViewController {
     
     func roundCorners()
     {
-        self.playButton.layer.cornerRadius = self.playButton.layer.frame.width/2
-        self.playButton.superview!.layer.cornerRadius = self.playButton.superview!.layer.frame.width/2
-        self.playButton.clipsToBounds = true
-        self.playButton.superview!.clipsToBounds = true
-        self.resetButton.layer.cornerRadius = self.playButton.layer.frame.width/2
-        self.resetButton.superview!.layer.cornerRadius = self.playButton.superview!.layer.frame.width/2
-        self.resetButton.clipsToBounds = true
-        self.resetButton.superview!.clipsToBounds = true
+        self.playButton.layer.cornerRadius = 10
+        self.playButton.superview!.layer.cornerRadius = 10
+        self.resetButton.layer.cornerRadius = 10
+        self.resetButton.superview!.layer.cornerRadius = 10
         self.instrument01Button.layer.cornerRadius = 10
         self.instrument01Button.superview!.layer.cornerRadius = 10
         self.instrument02Button.layer.cornerRadius = 10
@@ -198,30 +194,31 @@ class ViewController: UIViewController {
     
     func resizeIcons()
     {
-        self.instrument01Button.imageEdgeInsets.top = 15
-        self.instrument01Button.imageEdgeInsets.bottom = 15
-        self.instrument01Button.imageEdgeInsets.left = 15
-        self.instrument01Button.imageEdgeInsets.right = 15
+        let edgeInset: CGFloat = 15
+        self.instrument01Button.imageEdgeInsets.top = edgeInset*1.5
+        self.instrument01Button.imageEdgeInsets.bottom = edgeInset*1.5
+        self.instrument01Button.imageEdgeInsets.left = edgeInset
+        self.instrument01Button.imageEdgeInsets.right = edgeInset
         
-        self.instrument02Button.imageEdgeInsets.top = 15
-        self.instrument02Button.imageEdgeInsets.bottom = 15
-        self.instrument02Button.imageEdgeInsets.left = 15
-        self.instrument02Button.imageEdgeInsets.right = 15
+        self.instrument02Button.imageEdgeInsets.top = edgeInset*1.5
+        self.instrument02Button.imageEdgeInsets.bottom = edgeInset*1.5
+        self.instrument02Button.imageEdgeInsets.left = edgeInset
+        self.instrument02Button.imageEdgeInsets.right = edgeInset
         
-        self.instrument03Button.imageEdgeInsets.top = 15
-        self.instrument03Button.imageEdgeInsets.bottom = 15
-        self.instrument03Button.imageEdgeInsets.left = 15
-        self.instrument03Button.imageEdgeInsets.right = 15
+        self.instrument03Button.imageEdgeInsets.top = edgeInset*1.5
+        self.instrument03Button.imageEdgeInsets.bottom = edgeInset*1.5
+        self.instrument03Button.imageEdgeInsets.left = edgeInset
+        self.instrument03Button.imageEdgeInsets.right = edgeInset
         
-        self.instrument04Button.imageEdgeInsets.top = 15
-        self.instrument04Button.imageEdgeInsets.bottom = 15
-        self.instrument04Button.imageEdgeInsets.left = 15
-        self.instrument04Button.imageEdgeInsets.right = 15
+        self.instrument04Button.imageEdgeInsets.top = edgeInset*1.5
+        self.instrument04Button.imageEdgeInsets.bottom = edgeInset*1.5
+        self.instrument04Button.imageEdgeInsets.left = edgeInset
+        self.instrument04Button.imageEdgeInsets.right = edgeInset
         
-        self.instrument05Button.imageEdgeInsets.top = 15
-        self.instrument05Button.imageEdgeInsets.bottom = 15
-        self.instrument05Button.imageEdgeInsets.left = 15
-        self.instrument05Button.imageEdgeInsets.right = 15
+        self.instrument05Button.imageEdgeInsets.top = edgeInset*1.5
+        self.instrument05Button.imageEdgeInsets.bottom = edgeInset*1.5
+        self.instrument05Button.imageEdgeInsets.left = edgeInset
+        self.instrument05Button.imageEdgeInsets.right = edgeInset
     }
     
     @IBAction func playButtonTapped(_ sender: UIButton)
@@ -275,7 +272,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Piano)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.cyan)
+        self.gridManager.updateGridCellColor(color: UIColor.white)
         updateMenuColors()
         SoundBank.loadPiano()
         }

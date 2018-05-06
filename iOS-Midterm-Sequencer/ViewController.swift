@@ -58,6 +58,9 @@ class ViewController: UIViewController {
         self.setupSliders()
         
         self.menuButtons.append(contentsOf: [instrument01Button,instrument02Button,instrument03Button,instrument04Button,instrument05Button,playButton,resetButton]);
+        
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (255/255), green: (105/255), blue: (120/255), alpha: 1))
+        updateMenuColors()
     }
     
     func createGridForScreenSize()
@@ -270,7 +273,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Piano)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.white)
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (255/255), green: (105/255), blue: (120/255), alpha: 1))
         updateMenuColors()
         SoundBank.loadPiano()
         }
@@ -280,7 +283,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Guitar)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.white)
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (93/255), green: (211/255), blue: (158/255), alpha: 1))
         updateMenuColors()
         SoundBank.loadGuitar()
         }
@@ -290,7 +293,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Strings)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.green)
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (52/255), green: (191/255), blue: (222/255), alpha: 1))
         updateMenuColors()
         SoundBank.loadStrings()
         }
@@ -300,7 +303,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Flute)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.orange)
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (255/255), green: (240/255), blue: (124/255), alpha: 1))
         updateMenuColors()
         SoundBank.loadFlute()
         }
@@ -310,7 +313,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Marimba)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.magenta)
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (89/255), green: (248/255), blue: (232/255), alpha: 1))
         updateMenuColors()
         SoundBank.loadMarimba()
         }

@@ -26,16 +26,16 @@ class SoundBank: NSObject
     private static let pulse = 0.23
     
     private static var mix = AKMixer();
-    
+
     static var volume : Double
     {
         get
         {
-            return mix.volume
+            return SoundBank.mix.volume
         }
         set
         {
-            mix.volume = newValue
+            SoundBank.mix.volume = newValue
         }
     }
     
@@ -61,53 +61,53 @@ class SoundBank: NSObject
     // MARK: Instruments
     public static func loadVibes()
     {
-        SoundBank.setUpSampler()
+       // SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Vibes")
         currentInstrument = SoundBank.Instrument.Vibes
     }
 
     public static func loadPiano()
     {
-        SoundBank.setUpSampler()
+       // SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Piano")
         currentInstrument = SoundBank.Instrument.Piano
     }
     
     public static func loadMarimba()
     {
-        SoundBank.setUpSampler()
+       // SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Marimba")
         currentInstrument = SoundBank.Instrument.Marimba
     }
     
     public static func loadGuitar()
     {
-        SoundBank.setUpSampler()
+      //  SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("guitar")
         currentInstrument = SoundBank.Instrument.Guitar
     }
     
     public static func loadFlute()
     {
-        SoundBank.setUpSampler()
+      //  SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Flute")
          currentInstrument = SoundBank.Instrument.Flute
     }
     
     public static func loadClav()
     {
-        SoundBank.setUpSampler()
+       // SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Clav")
     }
     
     public static func loadStrings()
     {
-        SoundBank.setUpSampler()
+      //  SoundBank.setUpSampler()
         try! SoundBank.sampler.loadWav("Strings")
         currentInstrument = SoundBank.Instrument.Strings
     }
     
-    private static func setUpSampler()
+    public static func setUpSampler()
     {
         let ampedSampler = AKBooster(SoundBank.sampler, gain: 3.0)
         let delay  = AKDelay(ampedSampler)

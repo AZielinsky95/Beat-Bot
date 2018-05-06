@@ -14,7 +14,7 @@ class GridManager: NSObject
     let gridX : Int = 8
     let gridY : Int = 8
 
-    
+    //test
     func updateGridCellColor(color:UIColor)
     {
         GridCell.activeColor = color

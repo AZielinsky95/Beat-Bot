@@ -23,6 +23,7 @@
 		278E92D9209E6B9D00A0C390 /* marimba.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D4209E6B9D00A0C390 /* marimba.png */; };
 		278E92DC209E6B9D00A0C390 /* strings.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D7209E6B9D00A0C390 /* strings.png */; };
 		464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
+		CA9B7121209F52C30028D26F /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA9B7120209F52C20028D26F /* guitar.wav */; };
 		CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
 		CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
 		CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406A209B9CD2003A285E /* Main.storyboard */; };
@@ -37,7 +38,6 @@
 		CAC5408C209CBEE6003A285E /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54089209CBEE6003A285E /* Kick.wav */; };
 		CAC5408D209CBEE6003A285E /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408A209CBEE6003A285E /* Snare.wav */; };
 		CAC5408E209CBEE6003A285E /* Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408B209CBEE6003A285E /* Hat.wav */; };
-		CAC54091209CD6E5003A285E /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408F209CD6E4003A285E /* guitar.wav */; };
 		CAC54096209D73A2003A285E /* Vibes.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54095209D73A2003A285E /* Vibes.wav */; };
 		CAC54098209E2B18003A285E /* Flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54097209E2B18003A285E /* Flute.wav */; };
 		CAC5409B209E36FA003A285E /* Clav.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54099209E36F9003A285E /* Clav.wav */; };
@@ -65,6 +65,7 @@
 		278E92D4209E6B9D00A0C390 /* marimba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marimba.png; sourceTree = "<group>"; };
 		278E92D7209E6B9D00A0C390 /* strings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strings.png; sourceTree = "<group>"; };
 		B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
+		CA9B7120209F52C20028D26F /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC54068209B9CD2003A285E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		CAC54089209CBEE6003A285E /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
 		CAC5408A209CBEE6003A285E /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
 		CAC5408B209CBEE6003A285E /* Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hat.wav; sourceTree = "<group>"; };
-		CAC5408F209CD6E4003A285E /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		CAC54095209D73A2003A285E /* Vibes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Vibes.wav; sourceTree = "<group>"; };
 		CAC54097209E2B18003A285E /* Flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Flute.wav; sourceTree = "<group>"; };
 		CAC54099209E36F9003A285E /* Clav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clav.wav; sourceTree = "<group>"; };
@@ -107,6 +107,7 @@
 		2745126C209D3BEA004524F6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				CA9B7120209F52C20028D26F /* guitar.wav */,
 				CAC540A3209E50BC003A285E /* Piano2.wav */,
 				CAC540A1209E4FEF003A285E /* Piano.wav */,
 				CAC54099209E36F9003A285E /* Clav.wav */,
@@ -114,7 +115,6 @@
 				CAC5409F209E389E003A285E /* Strings.wav */,
 				CAC54097209E2B18003A285E /* Flute.wav */,
 				CAC54095209D73A2003A285E /* Vibes.wav */,
-				CAC5408F209CD6E4003A285E /* guitar.wav */,
 				CAC5408B209CBEE6003A285E /* Hat.wav */,
 				CAC54089209CBEE6003A285E /* Kick.wav */,
 				CAC5408A209CBEE6003A285E /* Snare.wav */,

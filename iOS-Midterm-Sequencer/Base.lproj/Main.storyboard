@@ -28,7 +28,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCM-lK-9hH" userLabel="Reset Button">
                                                 <rect key="frame" x="3" y="3" width="37" height="35"/>
-                                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" backgroundImage="icon_reload.png"/>
                                                 <connections>
                                                     <action selector="resetButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="Jt8-zi-eHj"/>
@@ -48,7 +48,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kE-pH-rnC" userLabel="Play Button">
                                                 <rect key="frame" x="3" y="3" width="67" height="54.5"/>
-                                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <inset key="contentEdgeInsets" minX="25" minY="25" maxX="0.0" maxY="25"/>
                                                 <state key="normal" backgroundImage="icon_play.png"/>
                                                 <connections>
@@ -186,7 +186,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv2-u7-IWA" userLabel="Instrument 01 Button">
                                                         <rect key="frame" x="8" y="29" width="64" height="64"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="piano.png"/>
                                                         <connections>
                                                             <action selector="instrument01ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="m6d-wl-wJn"/>
@@ -207,7 +207,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hc-7w-F7I" userLabel="Instrument 02 Button">
                                                         <rect key="frame" x="21" y="25" width="64" height="64"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="guitar.png"/>
                                                         <connections>
                                                             <action selector="instrument02ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="JKE-iZ-cfk"/>
@@ -227,7 +227,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVf-PK-wIT" userLabel="Instrument 03 Button">
                                                         <rect key="frame" x="-75" y="-62" width="256" height="256"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="strings.png"/>
                                                         <connections>
                                                             <action selector="instrument03ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="kOV-12-jfB"/>
@@ -247,7 +247,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-w8-yzv" userLabel="Instrument 04 Button">
                                                         <rect key="frame" x="-2" y="13" width="64" height="64"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="flute.png"/>
                                                         <connections>
                                                             <action selector="instrument04ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="kn4-SV-7Jh"/>
@@ -267,7 +267,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EX5-xu-lG2" userLabel="Instrument 05 Button">
                                                         <rect key="frame" x="-98" y="-83" width="256" height="256"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="marimba.png"/>
                                                         <connections>
                                                             <action selector="instrument05ButtonTapped:" destination="AW0-Gq-U7C" eventType="touchUpInside" id="fqP-G0-mYk"/>
@@ -303,7 +303,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.22352941176470589" green="0.22352941176470589" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Wtj-GU-TsS"/>
                     </view>
                     <connections>

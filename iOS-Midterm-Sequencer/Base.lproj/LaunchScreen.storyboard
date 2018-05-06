@@ -74,9 +74,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beat Bot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njK-6L-QWT">
-                                <rect key="frame" x="137" y="391" width="100" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beat Bot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njK-6L-QWT">
+                                <rect key="frame" x="137" y="404.5" width="100" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -84,8 +83,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.10971208756345174" green="0.10971208756345174" blue="0.10971208756345174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="njK-6L-QWT" firstAttribute="top" secondItem="F7v-38-flK" secondAttribute="bottom" constant="21.5" id="Dvr-di-fE5"/>
                             <constraint firstItem="F7v-38-flK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LLQ-YK-Tgm"/>
+                            <constraint firstItem="njK-6L-QWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="SaM-Rq-6Bo"/>
                             <constraint firstItem="F7v-38-flK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XQY-gf-gqE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="njK-6L-QWT" secondAttribute="trailing" constant="138" id="i1G-Fi-ILk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="njK-6L-QWT" secondAttribute="bottom" constant="231" id="kKV-Ol-ON7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

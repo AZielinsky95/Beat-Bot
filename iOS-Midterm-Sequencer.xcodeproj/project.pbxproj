@@ -20,11 +20,8 @@
 		27451269209D3BE3004524F6 /* flute.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451260209D3BE2004524F6 /* flute.png */; };
 		2745126A209D3BE3004524F6 /* guitar.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451261209D3BE3004524F6 /* guitar.png */; };
 		2745126B209D3BE3004524F6 /* trumpet.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451262209D3BE3004524F6 /* trumpet.png */; };
-		275EE2C9209E6E1200D1C0B4 /* piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 275EE2C8209E6E1200D1C0B4 /* piano.png */; };
 		278E92D9209E6B9D00A0C390 /* marimba.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D4209E6B9D00A0C390 /* marimba.png */; };
 		278E92DC209E6B9D00A0C390 /* strings.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D7209E6B9D00A0C390 /* strings.png */; };
-		278E92E0209E6CE300A0C390 /* flute.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92DD209E6CE300A0C390 /* flute.png */; };
-		278E92E2209E6CE300A0C390 /* guitar.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92DF209E6CE300A0C390 /* guitar.png */; };
 		464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
 		CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
 		CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
@@ -65,11 +62,8 @@
 		27451260209D3BE2004524F6 /* flute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flute.png; sourceTree = "<group>"; };
 		27451261209D3BE3004524F6 /* guitar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar.png; sourceTree = "<group>"; };
 		27451262209D3BE3004524F6 /* trumpet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trumpet.png; sourceTree = "<group>"; };
-		275EE2C8209E6E1200D1C0B4 /* piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = piano.png; path = ../../../../../../../../Downloads/Icons/piano.png; sourceTree = "<group>"; };
 		278E92D4209E6B9D00A0C390 /* marimba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marimba.png; sourceTree = "<group>"; };
 		278E92D7209E6B9D00A0C390 /* strings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strings.png; sourceTree = "<group>"; };
-		278E92DD209E6CE300A0C390 /* flute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flute.png; path = ../../../../../../../../Downloads/Icons/flute.png; sourceTree = "<group>"; };
-		278E92DF209E6CE300A0C390 /* guitar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guitar.png; path = ../../../../../../../../Downloads/Icons/guitar.png; sourceTree = "<group>"; };
 		B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
 		CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,9 +127,6 @@
 		2745126D209D3BF3004524F6 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				275EE2C8209E6E1200D1C0B4 /* piano.png */,
-				278E92DD209E6CE300A0C390 /* flute.png */,
-				278E92DF209E6CE300A0C390 /* guitar.png */,
 				278E92D4209E6B9D00A0C390 /* marimba.png */,
 				278E92D7209E6B9D00A0C390 /* strings.png */,
 				27451252209D36DB004524F6 /* circle_md.png */,
@@ -285,7 +276,6 @@
 				27451257209D36DB004524F6 /* icon_reload.png in Resources */,
 				278E92DC209E6B9D00A0C390 /* strings.png in Resources */,
 				CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
-				278E92E2209E6CE300A0C390 /* guitar.png in Resources */,
 				2745126A209D3BE3004524F6 /* guitar.png in Resources */,
 				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
 				27451266209D3BE3004524F6 /* piano.png in Resources */,
@@ -295,7 +285,6 @@
 				27451258209D36DB004524F6 /* icon_play.png in Resources */,
 				27451263209D3BE3004524F6 /* drum2.png in Resources */,
 				27451269209D3BE3004524F6 /* flute.png in Resources */,
-				275EE2C9209E6E1200D1C0B4 /* piano.png in Resources */,
 				CAC5409B209E36FA003A285E /* Clav.wav in Resources */,
 				27451267209D3BE3004524F6 /* bell.png in Resources */,
 				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
@@ -304,7 +293,6 @@
 				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
 				CAC540A4209E50BC003A285E /* Piano2.wav in Resources */,
 				CAC54091209CD6E5003A285E /* guitar.wav in Resources */,
-				278E92E0209E6CE300A0C390 /* flute.png in Resources */,
 				CAC5409E209E3897003A285E /* Guitar2.wav in Resources */,
 				CAC5408C209CBEE6003A285E /* Kick.wav in Resources */,
 				CAC54098209E2B18003A285E /* Flute.wav in Resources */,

@@ -1,539 +1,539 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		27451256209D36DB004524F6 /* circle_md.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451252209D36DB004524F6 /* circle_md.png */; };
-		27451257209D36DB004524F6 /* icon_reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451253209D36DB004524F6 /* icon_reload.png */; };
-		27451258209D36DB004524F6 /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451254209D36DB004524F6 /* icon_play.png */; };
-		27451259209D36DB004524F6 /* icon_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451255209D36DB004524F6 /* icon_pause.png */; };
-		27451263209D3BE3004524F6 /* drum2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125A209D3BE1004524F6 /* drum2.png */; };
-		27451264209D3BE3004524F6 /* harp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125B209D3BE2004524F6 /* harp.png */; };
-		27451265209D3BE3004524F6 /* drum.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125C209D3BE2004524F6 /* drum.png */; };
-		27451266209D3BE3004524F6 /* piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125D209D3BE2004524F6 /* piano.png */; };
-		27451267209D3BE3004524F6 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125E209D3BE2004524F6 /* bell.png */; };
-		27451268209D3BE3004524F6 /* violin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125F209D3BE2004524F6 /* violin.png */; };
-		27451269209D3BE3004524F6 /* flute.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451260209D3BE2004524F6 /* flute.png */; };
-		2745126A209D3BE3004524F6 /* guitar.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451261209D3BE3004524F6 /* guitar.png */; };
-		2745126B209D3BE3004524F6 /* trumpet.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451262209D3BE3004524F6 /* trumpet.png */; };
-		278E92D9209E6B9D00A0C390 /* marimba.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D4209E6B9D00A0C390 /* marimba.png */; };
-		278E92DC209E6B9D00A0C390 /* strings.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D7209E6B9D00A0C390 /* strings.png */; };
-		464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
-		CA9B7121209F52C30028D26F /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA9B7120209F52C20028D26F /* guitar.wav */; };
-		CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
-		CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
-		CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406A209B9CD2003A285E /* Main.storyboard */; };
-		CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406D209B9CD2003A285E /* Assets.xcassets */; };
-		CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */; };
-		CAC54079209BAC30003A285E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54078209BAC30003A285E /* GridCell.swift */; };
-		CAC5407B209BADBC003A285E /* GridManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407A209BADBC003A285E /* GridManager.swift */; };
-		CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407C209BB3EC003A285E /* AudioManager.swift */; };
-		CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54082209CA9AB003A285E /* SoundBank.swift */; };
-		CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54084209CA9C0003A285E /* FM Piano.wav */; };
-		CAC54087209CBD1D003A285E /* Marimba.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54086209CBD1C003A285E /* Marimba.wav */; };
-		CAC5408C209CBEE6003A285E /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54089209CBEE6003A285E /* Kick.wav */; };
-		CAC5408D209CBEE6003A285E /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408A209CBEE6003A285E /* Snare.wav */; };
-		CAC5408E209CBEE6003A285E /* Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408B209CBEE6003A285E /* Hat.wav */; };
-		CAC54096209D73A2003A285E /* Vibes.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54095209D73A2003A285E /* Vibes.wav */; };
-		CAC54098209E2B18003A285E /* Flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54097209E2B18003A285E /* Flute.wav */; };
-		CAC5409B209E36FA003A285E /* Clav.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54099209E36F9003A285E /* Clav.wav */; };
-		CAC5409E209E3897003A285E /* Guitar2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409D209E3897003A285E /* Guitar2.wav */; };
-		CAC540A0209E389E003A285E /* Strings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409F209E389E003A285E /* Strings.wav */; };
-		CAC540A2209E4FEF003A285E /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A1209E4FEF003A285E /* Piano.wav */; };
-		CAC540A4209E50BC003A285E /* Piano2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A3209E50BC003A285E /* Piano2.wav */; };
+        27451256209D36DB004524F6 /* circle_md.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451252209D36DB004524F6 /* circle_md.png */; };
+        27451257209D36DB004524F6 /* icon_reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451253209D36DB004524F6 /* icon_reload.png */; };
+        27451258209D36DB004524F6 /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451254209D36DB004524F6 /* icon_play.png */; };
+        27451259209D36DB004524F6 /* icon_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451255209D36DB004524F6 /* icon_pause.png */; };
+        27451263209D3BE3004524F6 /* drum2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125A209D3BE1004524F6 /* drum2.png */; };
+        27451264209D3BE3004524F6 /* harp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125B209D3BE2004524F6 /* harp.png */; };
+        27451265209D3BE3004524F6 /* drum.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125C209D3BE2004524F6 /* drum.png */; };
+        27451266209D3BE3004524F6 /* piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125D209D3BE2004524F6 /* piano.png */; };
+        27451267209D3BE3004524F6 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125E209D3BE2004524F6 /* bell.png */; };
+        27451268209D3BE3004524F6 /* violin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2745125F209D3BE2004524F6 /* violin.png */; };
+        27451269209D3BE3004524F6 /* flute.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451260209D3BE2004524F6 /* flute.png */; };
+        2745126A209D3BE3004524F6 /* guitar.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451261209D3BE3004524F6 /* guitar.png */; };
+        2745126B209D3BE3004524F6 /* trumpet.png in Resources */ = {isa = PBXBuildFile; fileRef = 27451262209D3BE3004524F6 /* trumpet.png */; };
+        278E92D9209E6B9D00A0C390 /* marimba.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D4209E6B9D00A0C390 /* marimba.png */; };
+        278E92DC209E6B9D00A0C390 /* strings.png in Resources */ = {isa = PBXBuildFile; fileRef = 278E92D7209E6B9D00A0C390 /* strings.png */; };
+        464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */; };
+        CA9B7121209F52C30028D26F /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA9B7120209F52C20028D26F /* guitar.wav */; };
+        CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54066209B9CD2003A285E /* AppDelegate.swift */; };
+        CAC54069209B9CD2003A285E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54068209B9CD2003A285E /* ViewController.swift */; };
+        CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406A209B9CD2003A285E /* Main.storyboard */; };
+        CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406D209B9CD2003A285E /* Assets.xcassets */; };
+        CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */; };
+        CAC54079209BAC30003A285E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54078209BAC30003A285E /* GridCell.swift */; };
+        CAC5407B209BADBC003A285E /* GridManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407A209BADBC003A285E /* GridManager.swift */; };
+        CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5407C209BB3EC003A285E /* AudioManager.swift */; };
+        CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC54082209CA9AB003A285E /* SoundBank.swift */; };
+        CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54084209CA9C0003A285E /* FM Piano.wav */; };
+        CAC54087209CBD1D003A285E /* Marimba.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54086209CBD1C003A285E /* Marimba.wav */; };
+        CAC5408C209CBEE6003A285E /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54089209CBEE6003A285E /* Kick.wav */; };
+        CAC5408D209CBEE6003A285E /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408A209CBEE6003A285E /* Snare.wav */; };
+        CAC5408E209CBEE6003A285E /* Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5408B209CBEE6003A285E /* Hat.wav */; };
+        CAC54096209D73A2003A285E /* Vibes.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54095209D73A2003A285E /* Vibes.wav */; };
+        CAC54098209E2B18003A285E /* Flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54097209E2B18003A285E /* Flute.wav */; };
+        CAC5409B209E36FA003A285E /* Clav.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC54099209E36F9003A285E /* Clav.wav */; };
+        CAC5409E209E3897003A285E /* Guitar2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409D209E3897003A285E /* Guitar2.wav */; };
+        CAC540A0209E389E003A285E /* Strings.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC5409F209E389E003A285E /* Strings.wav */; };
+        CAC540A2209E4FEF003A285E /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A1209E4FEF003A285E /* Piano.wav */; };
+        CAC540A4209E50BC003A285E /* Piano2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAC540A3209E50BC003A285E /* Piano2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Midterm_Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27451252209D36DB004524F6 /* circle_md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_md.png; sourceTree = "<group>"; };
-		27451253209D36DB004524F6 /* icon_reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_reload.png; sourceTree = "<group>"; };
-		27451254209D36DB004524F6 /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
-		27451255209D36DB004524F6 /* icon_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pause.png; sourceTree = "<group>"; };
-		2745125A209D3BE1004524F6 /* drum2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum2.png; sourceTree = "<group>"; };
-		2745125B209D3BE2004524F6 /* harp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harp.png; sourceTree = "<group>"; };
-		2745125C209D3BE2004524F6 /* drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum.png; sourceTree = "<group>"; };
-		2745125D209D3BE2004524F6 /* piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano.png; sourceTree = "<group>"; };
-		2745125E209D3BE2004524F6 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
-		2745125F209D3BE2004524F6 /* violin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violin.png; sourceTree = "<group>"; };
-		27451260209D3BE2004524F6 /* flute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flute.png; sourceTree = "<group>"; };
-		27451261209D3BE3004524F6 /* guitar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar.png; sourceTree = "<group>"; };
-		27451262209D3BE3004524F6 /* trumpet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trumpet.png; sourceTree = "<group>"; };
-		278E92D4209E6B9D00A0C390 /* marimba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marimba.png; sourceTree = "<group>"; };
-		278E92D7209E6B9D00A0C390 /* strings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strings.png; sourceTree = "<group>"; };
-		B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
-		CA9B7120209F52C20028D26F /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
-		CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAC54068209B9CD2003A285E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAC5406B209B9CD2003A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CAC5406D209B9CD2003A285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CAC54070209B9CD2003A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CAC54072209B9CD3003A285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAC54078209BAC30003A285E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
-		CAC5407A209BADBC003A285E /* GridManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridManager.swift; sourceTree = "<group>"; };
-		CAC5407C209BB3EC003A285E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
-		CAC54082209CA9AB003A285E /* SoundBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBank.swift; sourceTree = "<group>"; };
-		CAC54084209CA9C0003A285E /* FM Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "FM Piano.wav"; sourceTree = "<group>"; };
-		CAC54086209CBD1C003A285E /* Marimba.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Marimba.wav; sourceTree = "<group>"; };
-		CAC54089209CBEE6003A285E /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
-		CAC5408A209CBEE6003A285E /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
-		CAC5408B209CBEE6003A285E /* Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hat.wav; sourceTree = "<group>"; };
-		CAC54095209D73A2003A285E /* Vibes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Vibes.wav; sourceTree = "<group>"; };
-		CAC54097209E2B18003A285E /* Flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Flute.wav; sourceTree = "<group>"; };
-		CAC54099209E36F9003A285E /* Clav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clav.wav; sourceTree = "<group>"; };
-		CAC5409D209E3897003A285E /* Guitar2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Guitar2.wav; sourceTree = "<group>"; };
-		CAC5409F209E389E003A285E /* Strings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Strings.wav; sourceTree = "<group>"; };
-		CAC540A1209E4FEF003A285E /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
-		CAC540A3209E50BC003A285E /* Piano2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano2.wav; sourceTree = "<group>"; };
-		E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
+        211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Midterm_Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        27451252209D36DB004524F6 /* circle_md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_md.png; sourceTree = "<group>"; };
+        27451253209D36DB004524F6 /* icon_reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_reload.png; sourceTree = "<group>"; };
+        27451254209D36DB004524F6 /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
+        27451255209D36DB004524F6 /* icon_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pause.png; sourceTree = "<group>"; };
+        2745125A209D3BE1004524F6 /* drum2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum2.png; sourceTree = "<group>"; };
+        2745125B209D3BE2004524F6 /* harp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harp.png; sourceTree = "<group>"; };
+        2745125C209D3BE2004524F6 /* drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drum.png; sourceTree = "<group>"; };
+        2745125D209D3BE2004524F6 /* piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano.png; sourceTree = "<group>"; };
+        2745125E209D3BE2004524F6 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+        2745125F209D3BE2004524F6 /* violin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violin.png; sourceTree = "<group>"; };
+        27451260209D3BE2004524F6 /* flute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flute.png; sourceTree = "<group>"; };
+        27451261209D3BE3004524F6 /* guitar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar.png; sourceTree = "<group>"; };
+        27451262209D3BE3004524F6 /* trumpet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trumpet.png; sourceTree = "<group>"; };
+        278E92D4209E6B9D00A0C390 /* marimba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marimba.png; sourceTree = "<group>"; };
+        278E92D7209E6B9D00A0C390 /* strings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strings.png; sourceTree = "<group>"; };
+        B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
+        CA9B7120209F52C20028D26F /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+        CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Midterm-Sequencer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        CAC54066209B9CD2003A285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        CAC54068209B9CD2003A285E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        CAC5406B209B9CD2003A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        CAC5406D209B9CD2003A285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        CAC54070209B9CD2003A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        CAC54072209B9CD3003A285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        CAC54078209BAC30003A285E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+        CAC5407A209BADBC003A285E /* GridManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridManager.swift; sourceTree = "<group>"; };
+        CAC5407C209BB3EC003A285E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+        CAC54082209CA9AB003A285E /* SoundBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBank.swift; sourceTree = "<group>"; };
+        CAC54084209CA9C0003A285E /* FM Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "FM Piano.wav"; sourceTree = "<group>"; };
+        CAC54086209CBD1C003A285E /* Marimba.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Marimba.wav; sourceTree = "<group>"; };
+        CAC54089209CBEE6003A285E /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
+        CAC5408A209CBEE6003A285E /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
+        CAC5408B209CBEE6003A285E /* Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hat.wav; sourceTree = "<group>"; };
+        CAC54095209D73A2003A285E /* Vibes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Vibes.wav; sourceTree = "<group>"; };
+        CAC54097209E2B18003A285E /* Flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Flute.wav; sourceTree = "<group>"; };
+        CAC54099209E36F9003A285E /* Clav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clav.wav; sourceTree = "<group>"; };
+        CAC5409D209E3897003A285E /* Guitar2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Guitar2.wav; sourceTree = "<group>"; };
+        CAC5409F209E389E003A285E /* Strings.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Strings.wav; sourceTree = "<group>"; };
+        CAC540A1209E4FEF003A285E /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
+        CAC540A3209E50BC003A285E /* Piano2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano2.wav; sourceTree = "<group>"; };
+        E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Midterm-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Midterm-Sequencer/Pods-iOS-Midterm-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CAC54060209B9CD2003A285E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CAC54060209B9CD2003A285E /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                464A7E4BF72D938A61F474F2 /* Pods_iOS_Midterm_Sequencer.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2745126C209D3BEA004524F6 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				CA9B7120209F52C20028D26F /* guitar.wav */,
-				CAC540A3209E50BC003A285E /* Piano2.wav */,
-				CAC540A1209E4FEF003A285E /* Piano.wav */,
-				CAC54099209E36F9003A285E /* Clav.wav */,
-				CAC5409D209E3897003A285E /* Guitar2.wav */,
-				CAC5409F209E389E003A285E /* Strings.wav */,
-				CAC54097209E2B18003A285E /* Flute.wav */,
-				CAC54095209D73A2003A285E /* Vibes.wav */,
-				CAC5408B209CBEE6003A285E /* Hat.wav */,
-				CAC54089209CBEE6003A285E /* Kick.wav */,
-				CAC5408A209CBEE6003A285E /* Snare.wav */,
-				CAC54086209CBD1C003A285E /* Marimba.wav */,
-				CAC54084209CA9C0003A285E /* FM Piano.wav */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
-		2745126D209D3BF3004524F6 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				278E92D4209E6B9D00A0C390 /* marimba.png */,
-				278E92D7209E6B9D00A0C390 /* strings.png */,
-				27451252209D36DB004524F6 /* circle_md.png */,
-				27451255209D36DB004524F6 /* icon_pause.png */,
-				27451254209D36DB004524F6 /* icon_play.png */,
-				27451253209D36DB004524F6 /* icon_reload.png */,
-				2745125E209D3BE2004524F6 /* bell.png */,
-				2745125C209D3BE2004524F6 /* drum.png */,
-				2745125A209D3BE1004524F6 /* drum2.png */,
-				27451260209D3BE2004524F6 /* flute.png */,
-				27451261209D3BE3004524F6 /* guitar.png */,
-				2745125B209D3BE2004524F6 /* harp.png */,
-				2745125D209D3BE2004524F6 /* piano.png */,
-				27451262209D3BE3004524F6 /* trumpet.png */,
-				2745125F209D3BE2004524F6 /* violin.png */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
-		CAC5405A209B9CD2003A285E = {
-			isa = PBXGroup;
-			children = (
-				CAC54065209B9CD2003A285E /* iOS-Midterm-Sequencer */,
-				CAC54064209B9CD2003A285E /* Products */,
-				FA80C4E85F060639E3A85A0E /* Pods */,
-				D9F77684F8768993892F58C9 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		CAC54064209B9CD2003A285E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAC54065209B9CD2003A285E /* iOS-Midterm-Sequencer */ = {
-			isa = PBXGroup;
-			children = (
-				CAC54088209CBDC8003A285E /* Resources */,
-				CAC54066209B9CD2003A285E /* AppDelegate.swift */,
-				CAC54068209B9CD2003A285E /* ViewController.swift */,
-				CAC5406A209B9CD2003A285E /* Main.storyboard */,
-				CAC5406D209B9CD2003A285E /* Assets.xcassets */,
-				CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */,
-				CAC54072209B9CD3003A285E /* Info.plist */,
-				CAC54078209BAC30003A285E /* GridCell.swift */,
-				CAC5407A209BADBC003A285E /* GridManager.swift */,
-				CAC5407C209BB3EC003A285E /* AudioManager.swift */,
-				CAC54082209CA9AB003A285E /* SoundBank.swift */,
-			);
-			path = "iOS-Midterm-Sequencer";
-			sourceTree = "<group>";
-		};
-		CAC54088209CBDC8003A285E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2745126D209D3BF3004524F6 /* Icons */,
-				2745126C209D3BEA004524F6 /* Sounds */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		D9F77684F8768993892F58C9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA80C4E85F060639E3A85A0E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */,
-				E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
+        2745126C209D3BEA004524F6 /* Sounds */ = {
+            isa = PBXGroup;
+            children = (
+                CA9B7120209F52C20028D26F /* guitar.wav */,
+                CAC540A3209E50BC003A285E /* Piano2.wav */,
+                CAC540A1209E4FEF003A285E /* Piano.wav */,
+                CAC54099209E36F9003A285E /* Clav.wav */,
+                CAC5409D209E3897003A285E /* Guitar2.wav */,
+                CAC5409F209E389E003A285E /* Strings.wav */,
+                CAC54097209E2B18003A285E /* Flute.wav */,
+                CAC54095209D73A2003A285E /* Vibes.wav */,
+                CAC5408B209CBEE6003A285E /* Hat.wav */,
+                CAC54089209CBEE6003A285E /* Kick.wav */,
+                CAC5408A209CBEE6003A285E /* Snare.wav */,
+                CAC54086209CBD1C003A285E /* Marimba.wav */,
+                CAC54084209CA9C0003A285E /* FM Piano.wav */,
+            );
+            path = Sounds;
+            sourceTree = "<group>";
+        };
+        2745126D209D3BF3004524F6 /* Icons */ = {
+            isa = PBXGroup;
+            children = (
+                278E92D4209E6B9D00A0C390 /* marimba.png */,
+                278E92D7209E6B9D00A0C390 /* strings.png */,
+                27451252209D36DB004524F6 /* circle_md.png */,
+                27451255209D36DB004524F6 /* icon_pause.png */,
+                27451254209D36DB004524F6 /* icon_play.png */,
+                27451253209D36DB004524F6 /* icon_reload.png */,
+                2745125E209D3BE2004524F6 /* bell.png */,
+                2745125C209D3BE2004524F6 /* drum.png */,
+                2745125A209D3BE1004524F6 /* drum2.png */,
+                27451260209D3BE2004524F6 /* flute.png */,
+                27451261209D3BE3004524F6 /* guitar.png */,
+                2745125B209D3BE2004524F6 /* harp.png */,
+                2745125D209D3BE2004524F6 /* piano.png */,
+                27451262209D3BE3004524F6 /* trumpet.png */,
+                2745125F209D3BE2004524F6 /* violin.png */,
+            );
+            path = Icons;
+            sourceTree = "<group>";
+        };
+        CAC5405A209B9CD2003A285E = {
+            isa = PBXGroup;
+            children = (
+                CAC54065209B9CD2003A285E /* iOS-Midterm-Sequencer */,
+                CAC54064209B9CD2003A285E /* Products */,
+                FA80C4E85F060639E3A85A0E /* Pods */,
+                D9F77684F8768993892F58C9 /* Frameworks */,
+            );
+            sourceTree = "<group>";
+        };
+        CAC54064209B9CD2003A285E /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        CAC54065209B9CD2003A285E /* iOS-Midterm-Sequencer */ = {
+            isa = PBXGroup;
+            children = (
+                CAC54088209CBDC8003A285E /* Resources */,
+                CAC54066209B9CD2003A285E /* AppDelegate.swift */,
+                CAC54068209B9CD2003A285E /* ViewController.swift */,
+                CAC5406A209B9CD2003A285E /* Main.storyboard */,
+                CAC5406D209B9CD2003A285E /* Assets.xcassets */,
+                CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */,
+                CAC54072209B9CD3003A285E /* Info.plist */,
+                CAC54078209BAC30003A285E /* GridCell.swift */,
+                CAC5407A209BADBC003A285E /* GridManager.swift */,
+                CAC5407C209BB3EC003A285E /* AudioManager.swift */,
+                CAC54082209CA9AB003A285E /* SoundBank.swift */,
+            );
+            path = "iOS-Midterm-Sequencer";
+            sourceTree = "<group>";
+        };
+        CAC54088209CBDC8003A285E /* Resources */ = {
+            isa = PBXGroup;
+            children = (
+                2745126D209D3BF3004524F6 /* Icons */,
+                2745126C209D3BEA004524F6 /* Sounds */,
+            );
+            path = Resources;
+            sourceTree = "<group>";
+        };
+        D9F77684F8768993892F58C9 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                211E2CBFDB6FABFDC1CAC383 /* Pods_iOS_Midterm_Sequencer.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        FA80C4E85F060639E3A85A0E /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */,
+                E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAC54062209B9CD2003A285E /* iOS-Midterm-Sequencer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAC54075209B9CD3003A285E /* Build configuration list for PBXNativeTarget "iOS-Midterm-Sequencer" */;
-			buildPhases = (
-				A19526F8230EE11FC740115A /* [CP] Check Pods Manifest.lock */,
-				CAC5405F209B9CD2003A285E /* Sources */,
-				CAC54060209B9CD2003A285E /* Frameworks */,
-				CAC54061209B9CD2003A285E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "iOS-Midterm-Sequencer";
-			productName = "iOS-Midterm-Sequencer";
-			productReference = CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */;
-			productType = "com.apple.product-type.application";
-		};
+        CAC54062209B9CD2003A285E /* iOS-Midterm-Sequencer */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = CAC54075209B9CD3003A285E /* Build configuration list for PBXNativeTarget "iOS-Midterm-Sequencer" */;
+            buildPhases = (
+                A19526F8230EE11FC740115A /* [CP] Check Pods Manifest.lock */,
+                CAC5405F209B9CD2003A285E /* Sources */,
+                CAC54060209B9CD2003A285E /* Frameworks */,
+                CAC54061209B9CD2003A285E /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "iOS-Midterm-Sequencer";
+            productName = "iOS-Midterm-Sequencer";
+            productReference = CAC54063209B9CD2003A285E /* iOS-Midterm-Sequencer.app */;
+            productType = "com.apple.product-type.application";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CAC5405B209B9CD2003A285E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Alejandro Zielinsky";
-				TargetAttributes = {
-					CAC54062209B9CD2003A285E = {
-						CreatedOnToolsVersion = 9.3;
-					};
-				};
-			};
-			buildConfigurationList = CAC5405E209B9CD2003A285E /* Build configuration list for PBXProject "iOS-Midterm-Sequencer" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CAC5405A209B9CD2003A285E;
-			productRefGroup = CAC54064209B9CD2003A285E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CAC54062209B9CD2003A285E /* iOS-Midterm-Sequencer */,
-			);
-		};
+        CAC5405B209B9CD2003A285E /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0930;
+                LastUpgradeCheck = 0930;
+                ORGANIZATIONNAME = "Alejandro Zielinsky";
+                TargetAttributes = {
+                    CAC54062209B9CD2003A285E = {
+                        CreatedOnToolsVersion = 9.3;
+                    };
+                };
+            };
+            buildConfigurationList = CAC5405E209B9CD2003A285E /* Build configuration list for PBXProject "iOS-Midterm-Sequencer" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = CAC5405A209B9CD2003A285E;
+            productRefGroup = CAC54064209B9CD2003A285E /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                CAC54062209B9CD2003A285E /* iOS-Midterm-Sequencer */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CAC54061209B9CD2003A285E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAC5408E209CBEE6003A285E /* Hat.wav in Resources */,
-				CAC540A0209E389E003A285E /* Strings.wav in Resources */,
-				27451259209D36DB004524F6 /* icon_pause.png in Resources */,
-				2745126B209D3BE3004524F6 /* trumpet.png in Resources */,
-				278E92D9209E6B9D00A0C390 /* marimba.png in Resources */,
-				27451268209D3BE3004524F6 /* violin.png in Resources */,
-				27451257209D36DB004524F6 /* icon_reload.png in Resources */,
-				278E92DC209E6B9D00A0C390 /* strings.png in Resources */,
-				CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
-				2745126A209D3BE3004524F6 /* guitar.png in Resources */,
-				CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
-				27451266209D3BE3004524F6 /* piano.png in Resources */,
-				27451256209D36DB004524F6 /* circle_md.png in Resources */,
-				27451264209D3BE3004524F6 /* harp.png in Resources */,
-				27451265209D3BE3004524F6 /* drum.png in Resources */,
-				27451258209D36DB004524F6 /* icon_play.png in Resources */,
-				27451263209D3BE3004524F6 /* drum2.png in Resources */,
-				27451269209D3BE3004524F6 /* flute.png in Resources */,
-				CAC5409B209E36FA003A285E /* Clav.wav in Resources */,
-				27451267209D3BE3004524F6 /* bell.png in Resources */,
-				CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
-				CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
-				CAC540A2209E4FEF003A285E /* Piano.wav in Resources */,
-				CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
-				CAC540A4209E50BC003A285E /* Piano2.wav in Resources */,
-				CAC54091209CD6E5003A285E /* guitar.wav in Resources */,
-				CAC5409E209E3897003A285E /* Guitar2.wav in Resources */,
-				CAC5408C209CBEE6003A285E /* Kick.wav in Resources */,
-				CAC54098209E2B18003A285E /* Flute.wav in Resources */,
-				CAC54096209D73A2003A285E /* Vibes.wav in Resources */,
-				CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CAC54061209B9CD2003A285E /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                CAC5408E209CBEE6003A285E /* Hat.wav in Resources */,
+                CAC540A0209E389E003A285E /* Strings.wav in Resources */,
+                27451259209D36DB004524F6 /* icon_pause.png in Resources */,
+                2745126B209D3BE3004524F6 /* trumpet.png in Resources */,
+                278E92D9209E6B9D00A0C390 /* marimba.png in Resources */,
+                27451268209D3BE3004524F6 /* violin.png in Resources */,
+                27451257209D36DB004524F6 /* icon_reload.png in Resources */,
+                278E92DC209E6B9D00A0C390 /* strings.png in Resources */,
+                CAC5408D209CBEE6003A285E /* Snare.wav in Resources */,
+                2745126A209D3BE3004524F6 /* guitar.png in Resources */,
+                CAC54071209B9CD2003A285E /* LaunchScreen.storyboard in Resources */,
+                27451266209D3BE3004524F6 /* piano.png in Resources */,
+                27451256209D36DB004524F6 /* circle_md.png in Resources */,
+                27451264209D3BE3004524F6 /* harp.png in Resources */,
+                27451265209D3BE3004524F6 /* drum.png in Resources */,
+                27451258209D36DB004524F6 /* icon_play.png in Resources */,
+                27451263209D3BE3004524F6 /* drum2.png in Resources */,
+                27451269209D3BE3004524F6 /* flute.png in Resources */,
+                CAC5409B209E36FA003A285E /* Clav.wav in Resources */,
+                27451267209D3BE3004524F6 /* bell.png in Resources */,
+                CAC5406E209B9CD2003A285E /* Assets.xcassets in Resources */,
+                CAC54085209CA9C0003A285E /* FM Piano.wav in Resources */,
+                CAC540A2209E4FEF003A285E /* Piano.wav in Resources */,
+                CAC54087209CBD1D003A285E /* Marimba.wav in Resources */,
+                CAC540A4209E50BC003A285E /* Piano2.wav in Resources */,
+				CA9B7121209F52C30028D26F /* guitar.wav in Resources */,
+                CAC5409E209E3897003A285E /* Guitar2.wav in Resources */,
+                CAC5408C209CBEE6003A285E /* Kick.wav in Resources */,
+                CAC54098209E2B18003A285E /* Flute.wav in Resources */,
+                CAC54096209D73A2003A285E /* Vibes.wav in Resources */,
+                CAC5406C209B9CD2003A285E /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A19526F8230EE11FC740115A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOS-Midterm-Sequencer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+        A19526F8230EE11FC740115A /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-iOS-Midterm-Sequencer-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CAC5405F209B9CD2003A285E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAC54069209B9CD2003A285E /* ViewController.swift in Sources */,
-				CAC5407B209BADBC003A285E /* GridManager.swift in Sources */,
-				CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */,
-				CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */,
-				CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */,
-				CAC54079209BAC30003A285E /* GridCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CAC5405F209B9CD2003A285E /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                CAC54069209B9CD2003A285E /* ViewController.swift in Sources */,
+                CAC5407B209BADBC003A285E /* GridManager.swift in Sources */,
+                CAC54067209B9CD2003A285E /* AppDelegate.swift in Sources */,
+                CAC54083209CA9AB003A285E /* SoundBank.swift in Sources */,
+                CAC5407D209BB3EC003A285E /* AudioManager.swift in Sources */,
+                CAC54079209BAC30003A285E /* GridCell.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CAC5406A209B9CD2003A285E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAC5406B209B9CD2003A285E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAC54070209B9CD2003A285E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        CAC5406A209B9CD2003A285E /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                CAC5406B209B9CD2003A285E /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        CAC5406F209B9CD2003A285E /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                CAC54070209B9CD2003A285E /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CAC54073209B9CD3003A285E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		CAC54074209B9CD3003A285E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CAC54076209B9CD3003A285E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CAC54077209B9CD3003A285E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+        CAC54073209B9CD3003A285E /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        CAC54074209B9CD3003A285E /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        CAC54076209B9CD3003A285E /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = B8155292D65CECBDFFD91C21 /* Pods-iOS-Midterm-Sequencer.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = "";
+                INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        CAC54077209B9CD3003A285E /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = E2909B9E48E31F274C3039E3 /* Pods-iOS-Midterm-Sequencer.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = "";
+                INFOPLIST_FILE = "iOS-Midterm-Sequencer/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "com.AleZ.iOS-Midterm-Sequencer";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAC5405E209B9CD2003A285E /* Build configuration list for PBXProject "iOS-Midterm-Sequencer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAC54073209B9CD3003A285E /* Debug */,
-				CAC54074209B9CD3003A285E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CAC54075209B9CD3003A285E /* Build configuration list for PBXNativeTarget "iOS-Midterm-Sequencer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAC54076209B9CD3003A285E /* Debug */,
-				CAC54077209B9CD3003A285E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        CAC5405E209B9CD2003A285E /* Build configuration list for PBXProject "iOS-Midterm-Sequencer" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                CAC54073209B9CD3003A285E /* Debug */,
+                CAC54074209B9CD3003A285E /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        CAC54075209B9CD3003A285E /* Build configuration list for PBXNativeTarget "iOS-Midterm-Sequencer" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                CAC54076209B9CD3003A285E /* Debug */,
+                CAC54077209B9CD3003A285E /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = CAC5405B209B9CD2003A285E /* Project object */;
+    };
+    rootObject = CAC5405B209B9CD2003A285E /* Project object */;
 }

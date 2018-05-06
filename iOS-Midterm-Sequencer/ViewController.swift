@@ -290,7 +290,7 @@ class ViewController: UIViewController {
     {
         if(SoundBank.currentInstrument != SoundBank.Instrument.Strings)
         {
-        self.gridManager.updateGridCellColor(color: UIColor.init(red: (52/255), green: (138/255), blue: (167/255), alpha: 1))
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (52/255), green: (191/255), blue: (222/255), alpha: 1))
         updateMenuColors()
         SoundBank.loadStrings()
         }

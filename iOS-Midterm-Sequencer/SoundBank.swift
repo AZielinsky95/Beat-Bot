@@ -69,7 +69,7 @@ class SoundBank: NSObject
     public static func loadPiano()
     {
         SoundBank.setUpSampler()
-        try! SoundBank.sampler.loadWav("Piano2")
+        try! SoundBank.sampler.loadWav("Piano")
         currentInstrument = SoundBank.Instrument.Piano
     }
     
@@ -83,7 +83,7 @@ class SoundBank: NSObject
     public static func loadGuitar()
     {
         SoundBank.setUpSampler()
-        try! SoundBank.sampler.loadWav("Guitar2")
+        try! SoundBank.sampler.loadWav("guitar")
         currentInstrument = SoundBank.Instrument.Guitar
     }
     

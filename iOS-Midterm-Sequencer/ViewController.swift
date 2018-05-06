@@ -58,6 +58,9 @@ class ViewController: UIViewController {
         self.setupSliders()
         
         self.menuButtons.append(contentsOf: [instrument01Button,instrument02Button,instrument03Button,instrument04Button,instrument05Button,playButton,resetButton]);
+        
+        self.gridManager.updateGridCellColor(color: UIColor.init(red: (255/255), green: (105/255), blue: (120/255), alpha: 1))
+        updateMenuColors()
     }
     
     func createGridForScreenSize()

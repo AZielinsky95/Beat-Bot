@@ -26,6 +26,31 @@ class GridCell: UIButton
     {
         super.init(frame: frame)
         self.gridNote = note
+        if(note == 0)
+        {
+            GridCell.activeColor = UIColor.white
+            let kickPath = Bundle.main.path(forResource: "Kick.wav", ofType:nil)!
+            let kickUrl = URL(fileURLWithPath: kickPath)
+            kick = try! AVAudioPlayer(contentsOf: kickUrl)
+            kick.prepareToPlay()
+        }
+        else if(note == 1)
+        {
+            GridCell.activeColor = UIColor.white
+            
+            let snarePath = Bundle.main.path(forResource: "Snare.wav", ofType:nil)!
+            let snareURL = URL(fileURLWithPath: snarePath)
+            snare = try! AVAudioPlayer(contentsOf: snareURL)
+            snare.prepareToPlay()
+        }
+        else if(note == 2)
+        {
+            GridCell.activeColor = UIColor.white
+            let hatPath = Bundle.main.path(forResource: "Hat.wav", ofType:nil)!
+            let hatURL = URL(fileURLWithPath: hatPath)
+            hat = try! AVAudioPlayer(contentsOf: hatURL)
+            hat.prepareToPlay()
+        }
         self.addTarget(self, action: #selector(toggleCell), for: UIControlEvents.touchUpInside)
     }
     
@@ -71,9 +96,9 @@ class GridCell: UIButton
         hat.prepareToPlay()
     }
     
-    public func playDrumNote(note:Int)
+    public func playDrumNote()
     {
-        switch note
+        switch gridNote
         {
         case 0:
             kick.stop()

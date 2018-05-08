@@ -150,22 +150,11 @@ class ViewController: UIViewController {
                 {
                     if(y<13)
                     {
-                        self.gridManager.grid[y][x].playNote()
+                      self.gridManager.grid[y][x].playNote()
                     }
                     else
                     {
-                        if(y == 15) //KICK
-                        {
-                            self.gridManager.grid[y][x].playDrumNote(note:0);
-                        }
-                        else if(y == 14) // SNARE
-                        {
-                            self.gridManager.grid[y][x].playDrumNote(note:1);
-                        }
-                        else if(y == 13) // HAT
-                        {
-                            self.gridManager.grid[y][x].playDrumNote(note:2);
-                        }
+                      self.gridManager.grid[y][x].playDrumNote();
                     }
                    self.gridManager.grid[y][x].scaleUp()
                 }

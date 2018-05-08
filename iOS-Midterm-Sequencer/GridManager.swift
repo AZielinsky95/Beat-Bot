@@ -23,7 +23,7 @@ class GridManager: NSObject
         {
             for cell in row
             {
-                if(cell.isActive)
+                if(cell.isActive && (cell.gridNote != 0 || cell.gridNote != 1 || cell.gridNote != 2))
                 {
                     cell.updateColor(color: color)
                 }
@@ -42,12 +42,27 @@ class GridManager: NSObject
             
             for x in 0..<gridX
             {
-                self.grid[y].append(GridCell(frame: frame,note: SoundBank.dFlatMajor16[y]))
-                self.grid[y][x].backgroundColor = GridCell.inActiveColor
                 if(y  == 13 || y == 14 || y == 15)
                 {
-                self.grid[y][x].setUpDrums()
+                    if(y == 13)
+                    {
+                     self.grid[y].append(GridCell(frame: frame,note:2))
+                    }
+                    else if(y == 14)
+                    {
+                     self.grid[y].append(GridCell(frame: frame,note:1))
+                    }
+                    else if(y == 15)
+                    {
+                     self.grid[y].append(GridCell(frame: frame,note:0))
+                    }
                 }
+                else
+                {
+                  self.grid[y].append(GridCell(frame: frame,note: SoundBank.dFlatMajor16[y]))
+                }
+                
+              self.grid[y][x].backgroundColor = GridCell.inActiveColor
             }
         }
     }

@@ -49,7 +49,9 @@ class SoundBank: NSObject
     
     public static var dFlatMajor = [73,75,77, 78, 80, 82, 84, 85]
     
-    //public static var cMajor16 = [48, 74, 76, 77, 79, 81, 83, 84, 72 + 16, 74 + 16, 76 + 16, 77 + 16, 79 + 16, 81 + 16, 83 + 16, 112]
+    public static var cMajor16 = [48, 74, 76, 77, 79, 81, 83, 84, 72 + 16, 74 + 16, 76 + 16, 77 + 16, 79 + 16, 81 + 16, 83 + 16, 112]
+    
+    public static var dFlatMajor16 = [73,75,77, 78, 80, 82, 84, 85,87,89,90,92,94,96,97,99]
     
     public static var cMajorChord = [64, 68, 71, 75, 76, 80, 83, 87]
     
@@ -106,6 +108,7 @@ class SoundBank: NSObject
         try! SoundBank.sampler.loadWav("NewStrings")
         currentInstrument = SoundBank.Instrument.Strings
     }
+    
     
     public static func setUpSampler()
     {

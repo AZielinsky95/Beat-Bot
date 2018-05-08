@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioKit
 
 class GridCell: UIButton
 {
@@ -15,6 +16,11 @@ class GridCell: UIButton
     static let inActiveColor : UIColor = UIColor.gray;
     
     var gridNote : Int = 0;
+    
+
+    var kick = AVAudioPlayer()
+    var snare = AVAudioPlayer()
+    var hat = AVAudioPlayer()
     
     init(frame: CGRect,note:Int)
     {
@@ -45,6 +51,42 @@ class GridCell: UIButton
     func setOriginalScale()
     {
       self.transform = CGAffineTransform.identity
+    }
+    
+    public func setUpDrums()
+    {
+        let kickPath = Bundle.main.path(forResource: "Kick.wav", ofType:nil)!
+        let kickUrl = URL(fileURLWithPath: kickPath)
+        kick = try! AVAudioPlayer(contentsOf: kickUrl)
+        kick.prepareToPlay()
+        
+        let snarePath = Bundle.main.path(forResource: "Snare.wav", ofType:nil)!
+        let snareURL = URL(fileURLWithPath: snarePath)
+        snare = try! AVAudioPlayer(contentsOf: snareURL)
+        snare.prepareToPlay()
+        
+        let hatPath = Bundle.main.path(forResource: "Hat.wav", ofType:nil)!
+        let hatURL = URL(fileURLWithPath: hatPath)
+        hat = try! AVAudioPlayer(contentsOf: hatURL)
+        hat.prepareToPlay()
+    }
+    
+    public func playDrumNote(note:Int)
+    {
+        switch note
+        {
+        case 0:
+            kick.stop()
+            kick.play()
+        case 1:
+            snare.stop()
+            snare.play()
+        case 2:
+            hat.stop()
+            hat.play()
+        default:
+            print("DRUM NOTE FAILED");
+        }
     }
     
     @objc func toggleCell()

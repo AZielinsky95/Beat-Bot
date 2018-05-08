@@ -12,7 +12,7 @@ import AudioKit
 class AudioManager: NSObject
 {
     let metronome = AKMetronome()
-    var tempo = 160.0
+    var tempo = 120.0
     var currentStep = -1
     
     var volume: Double
@@ -32,6 +32,7 @@ class AudioManager: NSObject
         self.metronome.frequency1 = 0;
         self.metronome.frequency2 = 0;
         self.metronome.tempo = tempo;
+     //   SoundBank.setUpDrums()
         SoundBank.setUpSampler()
         SoundBank.loadPiano()
     }

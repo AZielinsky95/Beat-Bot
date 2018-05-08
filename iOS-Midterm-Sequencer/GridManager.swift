@@ -11,8 +11,8 @@ import UIKit
 class GridManager: NSObject
 {
     var grid = [[GridCell]]()
-    let gridX : Int = 8
-    let gridY : Int = 8
+    let gridX : Int = 16
+    let gridY : Int = 16
 
     //test
     func updateGridCellColor(color:UIColor)
@@ -34,13 +34,20 @@ class GridManager: NSObject
     func createGrid(width:Int,height:Int)
     {
         let frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        SoundBank.dFlatMajor.reverse()
-        SoundBank.dFlatMajor = SoundBank.shiftOctave(octave: -1, scale: SoundBank.dFlatMajor)
-        for y in 0..<gridY {
+        SoundBank.dFlatMajor16.reverse()
+        SoundBank.dFlatMajor16 = SoundBank.shiftOctave(octave: -1, scale: SoundBank.dFlatMajor16)
+        for y in 0..<gridY
+        {
             grid.append(Array())
-            for x in 0..<gridX {
-                self.grid[y].append(GridCell(frame: frame,note: SoundBank.dFlatMajor[y]))
+            
+            for x in 0..<gridX
+            {
+                self.grid[y].append(GridCell(frame: frame,note: SoundBank.dFlatMajor16[y]))
                 self.grid[y][x].backgroundColor = GridCell.inActiveColor
+                if(y  == 13 || y == 14 || y == 15)
+                {
+                self.grid[y][x].setUpDrums()
+                }
             }
         }
     }

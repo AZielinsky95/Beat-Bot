@@ -67,9 +67,9 @@ class ViewController: UIViewController {
     {
             switch UIScreen.main.nativeBounds.width {
             case 640:
-                setupGrid(width:30,height:30) //iPhone 5, 5C, 5S, iPod Touch 5g
+                setupGrid(width:15,height:15) //iPhone 5, 5C, 5S, iPod Touch 5g
             case 750,1125:
-                setupGrid(width:40,height:40) //iPhone 6, iPhone 6s, iPhone 7/8 OR  //print("iphonex")
+                setupGrid(width:22,height:22) //iPhone 6, iPhone 6s, iPhone 7/8 OR  //print("iphonex")
             case 1242:
                 setupGrid(width:45,height:45) //iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus
             case 1536:
@@ -86,14 +86,14 @@ class ViewController: UIViewController {
         
         self.mainStackView = UIStackView()
         self.mainStackView.axis = .vertical
-        self.mainStackView.spacing = 5
+        self.mainStackView.spacing = 1
         self.mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         for y in 0..<gridManager.gridY
         {
             let rowStackView = UIStackView()
             rowStackView.axis = .horizontal
-            rowStackView.spacing = 5
+            rowStackView.spacing = 1
             rowStackView.translatesAutoresizingMaskIntoConstraints = false
             
             for x in 0..<gridManager.gridX
@@ -148,7 +148,25 @@ class ViewController: UIViewController {
                 //Get all active cells in this row
                 if(self.gridManager.grid[y][x].isActive)
                 {
-                   self.gridManager.grid[y][x].playNote()
+                    if(y<13)
+                    {
+                        self.gridManager.grid[y][x].playNote()
+                    }
+                    else
+                    {
+                        if(y == 15) //KICK
+                        {
+                            self.gridManager.grid[y][x].playDrumNote(note:0);
+                        }
+                        else if(y == 14) // SNARE
+                        {
+                            self.gridManager.grid[y][x].playDrumNote(note:1);
+                        }
+                        else if(y == 13) // HAT
+                        {
+                            self.gridManager.grid[y][x].playDrumNote(note:2);
+                        }
+                    }
                    self.gridManager.grid[y][x].scaleUp()
                 }
             })
@@ -318,25 +336,5 @@ class ViewController: UIViewController {
         SoundBank.loadMarimba()
         }
     }
-    
-    //    override func viewDidLayoutSubviews()
-    //    {
-    //        self.makeButtonsCircular()
-    //    }
-    //
-    //    func makeButtonsCircular()
-    //    {
-    //      //  let position = self.playButton.superview!.center
-    //       // self.playButton.superview!.frame = CGRect(x: position.x, y: position.y, width: 100, height: 100)
-    //       // self.playButton.frame = CGRect(x:  self.playButton.center.x, y: self.playButton.center.y, width: 50, height: 50)
-    //        self.playButton.superview?.layer.cornerRadius = 0.5 * (self.playButton.superview?.bounds.size.width)!
-    //        self.playButton.layer.cornerRadius = 0.5 * playButton.bounds.size.width
-    //
-    //        self.resetButton.superview?.layer.cornerRadius = 0.5 * (self.resetButton.superview?.bounds.size.width)!
-    //        self.resetButton.layer.cornerRadius = 0.5 * resetButton.bounds.size.width
-    //
-    //    }
-    
-    
 }
 
